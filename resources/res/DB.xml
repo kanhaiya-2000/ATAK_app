@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Network Preferences" android:key="NETWORK"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/restreaming_size" android:title="@string/pref_broadcast_size" android:key="uastool.pref_broadcast_size" android:summary="@string/pref_broadcast_size_sum" android:defaultValue="320x240 (low)" android:entryValues="@array/restreaming_size"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/restreaming_bitrate" android:title="@string/pref_broadcast_bitrate" android:key="uastool.pref_video_broadcast_bitrate" android:summary="@string/pref_broadcast_bitrate_sum" android:defaultValue="400" android:entryValues="@array/restreaming_bitrate_values"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/video_destination" android:title="@string/pref_broadcast_destination" android:key="uastool.pref_video_broadcast_destination" android:summary="@string/pref_broadcast_destination_sum" android:defaultValue="Local Area Network" android:entryValues="@array/video_destination"/>
+    <PreferenceCategory android:title="Wowza Preferences"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_wowza_dest_ip" android:key="uastool.pref_video_dest_ip" android:summary="@string/pref_wowza_dest_ip_sum" android:dialogTitle="@string/pref_wowza_dest_ip"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="@string/pref_wowza_dest_port" android:key="uastool.pref_video_dest_port" android:summary="@string/pref_wowza_dest_port_sum" android:dialogTitle="@string/pref_wowza_dest_port" android:inputType="number"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_wowza_ssl" android:key="uastool.pref_broadcast_ssl" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_wowza_identifier" android:key="uastool.pref_video_broadcast_path" android:summary="@string/pref_wowza_identifier_sum" android:dialogTitle="@string/pref_wowza_identifier"/>
+    <PreferenceCategory android:title="Local Network"/>
+    <com.atakmap.android.gui.PanListPreference android:title="@string/pref_local_adapter" android:key="uastool.pref_video_dest_adapter" android:summary="@string/pref_local_adapter_sum"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_local_lastoctet" android:key="uastool.pref_video_dest_lastOctet" android:defaultValue="true"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_local_dest_ip" android:key="uastool.pref_video_dest_ip_multicast" android:summary="@string/pref_local_dest_ip_sum" android:dialogTitle="@string/pref_local_dest_ip"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="@string/pref_local_dest_port" android:key="uastool.pref_video_dest_port_multicast" android:summary="@string/pref_local_dest_port_sum" android:dialogTitle="@string/pref_local_dest_port" android:inputType="number"/>
+    <PreferenceCategory android:title="Other"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_video_observer_url" android:key="uastool.pref_video_observer_url" android:summary="@string/pref_video_observer_url_sum" android:dialogTitle="@string/pref_video_observer_url"/>
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <string name="ga_trackingId">UA-51862927-3
+    </string>
+    <integer name="ga_dispatchPeriod">600
+    </integer>
+    <integer name="ga_sessionTimeout">300
+    </integer>
+    <bool name="ga_autoActivityTracking">true
+    </bool>
+    <bool name="ga_reportUncaughtExceptions">true
+    </bool>
+    <screenName name="org.droidplanner.services.activities.FlightActivity"> Flight Screen 
+    </screenName>
+    <screenName name="org.droidplanner.services.activities.EditorActivity"> Editor Screen 
+    </screenName>
+    <screenName name="org.droidplanner.services.activities.ConfigurationActivity"> Configuration Screen 
+    </screenName>
+    <screenName name="org.droidplanner.services.activities.SettingsActivity"> Settings Screen 
+    </screenName>
+    <screenName name="org.droidplanner.services.activities.helpers.MapPreferencesActivity"> Map Preferences Screen 
+    </screenName>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="normal|bold|italic" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:text="@string/config_select_title"/>
+            <com.atakmap.android.gui.PluginSpinner android:id="@+id/config_platform_spinner" android:layout_width="match_parent" android:layout_height="40dp" style="@style/darkButton"/>
+            <LinearLayout android:id="@+id/config_DJI" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/config_DJI_TextView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp"/>
+            </LinearLayout>
+            <include layout="@layout/uas_config_av_puma"/>
+            <include layout="@layout/uas_config_pd100"/>
+            <include layout="@layout/uas_config_indago"/>
+            <include layout="@layout/uas_config_mavlink"/>
+            <include layout="@layout/uas_config_generic"/>
+            <include layout="@layout/uas_config_r80d"/>
+            <include layout="@layout/uas_config_trillium"/>
+            <LinearLayout android:id="@+id/config_evo" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/config_evo_TextView" android:layout_width="match_parent" android:layout_height="match_parent" android:text="No Additional Settings"/>
+            </LinearLayout>
+            <include layout="@layout/avahi_list_layout"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

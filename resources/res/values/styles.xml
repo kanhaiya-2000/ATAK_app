@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ATAKEditText">
+        <item name="android:imeOptions">actionUnspecified</item>
+    </style>
+    <style name="ATAKPluginTheme">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+    </style>
+    <style name="ATAKSpinner">
+        <item name="android:spinnerMode">@null</item>
+    </style>
+    <style name="ATAKSpinnerItem">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ATAKTheme">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+    </style>
+    <style name="AppBaseTheme">
+    </style>
+    <style name="AppTheme">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@android:style/Widget.Button</item>
+        <item name="android:editTextStyle">@style/ATAKEditText</item>
+        <item name="android:imageButtonStyle">@android:style/Widget.Button</item>
+        <item name="android:spinnerStyle">@style/ATAKSpinner</item>
+        <item name="android:spinnerItemStyle">@style/ATAKSpinnerItem</item>
+    </style>
+    <style name="FullDropdownStyle">
+        <item name="android:buttonStyle">@style/unpaddedButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:imeOptions">actionUnspecified</item>
+    </style>
+    <style name="darkButton">
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_gray</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:shadowColor">@color/darker_gray</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="darkSpinner">
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/dark_spinner</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:shadowColor">@color/darker_gray</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:popupBackground">@drawable/new_dark_button_bg</item>
+    </style>
+    <style name="darkSpinnerTablet">
+        <item name="android:textSize">40sp</item>
+    </style>
+    <style name="moreMenuStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/more_menu_color_selector</item>
+        <item name="android:divider">#9eb0b7</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:itemBackground">#262626</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+    </style>
+    <style name="transButton">
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:shadowColor">@color/alpha_dark_gray</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="unpaddedButton">
+        <item name="android:textSize">@dimen/fontSize</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+    <style name="vertical_sep">
+        <item name="android:background">@color/darker_gray</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="video_ui_text_style">
+        <item name="android:textColor">@color/video_ui_text_color</item>
+        <item name="android:shadowColor">@color/video_ui_textshadow_color</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+</resources>

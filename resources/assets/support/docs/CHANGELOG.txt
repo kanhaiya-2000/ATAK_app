@@ -1,0 +1,934 @@
+UAS Tool Changelog (as of 07/23/2021)
+
+///////////////////////////
+// ver 4.4 (07/23/2021)  //
+///////////////////////////
+
+New Features:
+=============
+
+DJI: Add local data mode.
+Add tensor flow object detection (cars, trucks, airplanes, boats and people).
+Add ability to drop detections on map.
+DJI: Add virtual joysticks.
+Add ability to show mapshot in FOV four-corners.
+Add ability to show UAS FMV on map in FOV four-corners.
+MAVLink: Add survey and perimeter route types.
+MAVLink: Add setting for joystick decay.
+Joystick input repeater.
+MAVLink Anafi: Add zoom.
+MAVLink: Add camera zoom by controller.
+MAVLink Anafi: Add auto install qgc agent
+Add picture-in-picture widget to UI. 
+MAVLink: Add default avahi items.
+Added EVO 2 platform.
+EVO: Add button bar, zoom, thermal, camera change.
+Add unit of measure to UI headings.
+Add button to adjust video data rate to operator camera bar.
+Add validation/filtering to network preferences (local video destination and Wowza destination) for hostname/IP entry fields.
+Add validation/filtering to BH3 preferences for video source IP.
+Add text entry configuration for single line and number fields for BH3 and Generic platforms preferences.
+Add real-time controller control stick position reporting to UI.
+Add messages for controller configuration status.
+Add preference to set the mapshot image save settings.
+Add sliders for left and right joystick triggers.
+Add left and right joystick trigger calibration.
+Add prompts and calibration for left and right joystick triggers.
+MAVLink: Add herelink to avahi list.
+MAVLink: add position control and stabilized mode config buttons.
+MAVLink: Add ALTCTL mode.
+
+
+Updates and Bug Fixes:
+======================
+Add a null check for detection fix to be safe.
+Add a location check to DetectorActivity.processImage.
+Make platform selector title more user friendly.
+Hide radial menu after selecting menu item to show mapshot image on map.
+Make Dual Sticks the default virtual joystick type.
+Fix precision in hal in COT.
+DJI: Fix for Mavic Pro odd video frame size.
+MAVLink: disable joystick decay by default, add setting to disable joysticks.
+DJI: Remove required sdk version for CrystalSky.
+Fix Don't ask again for application install feature.
+DJI: Add new values dimens bucket to size UI better on DJI Smart Controller.
+DJI: Fix bug to prevent dir names in sound list.
+Fix UI buttons not sizing correctly after UAS Tool reshow.
+DJI: Optimize by limiting IAircraft calls related to UI.
+DJI: Update reflector for YUV.
+Fix status summary text not updating when not stale.
+Default joystick X to RTL instead of "diarm motors".
+Disable point CE check when determining if UAS has GPS on status page.
+Stop survey imaging on stopped task. 
+Set the date format written to the KMZ/KML file to use yyyymmdd-HHmmss format.
+Fix a bug where the wrong controller config would be written to if using the skip feature in a certain way.
+Controller setup UI tweaks.
+Add new values dimens bucket to size UI better on S5.
+Fix up map vs video issues. Add z-order, remove old tweaks.
+Don't update OSD if OSD is not showing.
+Set OSD updates to 1000ms.
+Stop video frame captures when detection is stopped.
+Changes to use offscreen video consumer to get video frames.
+Fix tracking view.
+Improves logic of and condenses mapshot code.
+Default to no HUD/AR for mapshot.
+Minor changes to overlay manager presentation.
+Simplify AR/HUD HUD logic.
+Update for shape recognition and handling via radial.
+Optimizations for video UI and status page.
+Fix survey route creation crash when imagery interval is not set.
+Update to video consumer bitmap update listener.
+Fix for onFlyingStatusChanged being continuously called.
+MAVLink: Fix message handling.
+Fix corner case for parrot controller.
+Fix toggle button not displaying on state after exiting and reentering the camera bar.
+Fix up op camerabar for video map overlay.
+Add on/off highlighting to the FMV UAS video map overlay toggle button.
+Fix issue where image remained after UASTool was shutdown.
+Fallback to video bitrate from prefs if bitrate slider not used.
+Format heading in marker label & metadata.
+Hide pan-to button from received tasks on received gimbal control task.
+DJI: Add AIDL getCanZoom.
+Update uas heading widget text.
+DJI: Update FOV with zoom also in setHFOV,setVFOV.
+DJI: Fix bug in getVFOV.
+DJI: Update FOV based on zoom level.
+DJI: Move zoom factors to AIDL.
+Synchronize telemetry callbacks.
+MAVLink: fix 0 altitude setting for validate route (0=no max altitude).
+Fix sensor field of view.
+Fix klv checksum.
+Fix klv azimuth and pitch calculations.
+Fix multiple prompts to install platform support apk files.
+MAVLink: Rework main loop.
+MAVLink: Catch npe on shutdown.
+Trillium: Add ce and le to aircraftitem.
+Fixup pip video in observer.
+MAVLink: change qgc agent wording.
+Bring the bottom bar to the front always.
+Add pip video widget to observer.
+EVO: Fix reconnect.
+EVO: Remove Preferences since there are none.
+Fix NPE when switching platforms for APK install.
+EVO: Add Beta Warning.
+MAVLink: Allow takeoff if armed.
+Keep gimbal heading widget scale constant.
+Reorganize Avahi adapter.
+Break out platforms config pages into their own xml file.
+DJI: Update ATAKGo display name for apk installation/update.
+MAVLink Anafi: Adjust max values from joysticks.
+MAVLink: Adjust gimbal ROI behavior
+MAVLink: Adjust messages and altitudes to be the same as qgroundcontrol
+MAVLink: Adjust manual control thread to 50ms.
+Trillium: Add option to use corners computed in uastool
+DJI: fix compass calib mixed up messages.
+DJI: Fix back button logic causing blank screen on reshow.
+Fix NPE in UASItem.updateStatusData() if uasMarker is set to null while stepping through status items.
+Catch all exceptions in getAircraftItem().
+Fix NPE where method called from UASToolDropDownReceiver constructor was circling back to call and use UASToolDropDownReceiver.getInstance().
+Increase KLV frequency to remove need for increased buffering in synchronized players.
+Trillium: Fix gimbal control mode
+DJI: Fix bad model names for OcuSync freq bands.
+DJI: Fix crash on null Res/FPS list.
+DJI: Suppress OcuSync freq band toasts for unsupported models.
+Trillium: Fix camera steer by delta.
+Fix Map UI not showing after full to half screen.
+MAVLink: Decay manual controls.
+When adding the active route to the Marker CoT, add the AGL into the HAE so that the Marker will be placed at the correct Altitude.
+Remove previewTexture set invisible that causes video frame to be black for second.
+Increase flight logger increments to 2 secs.
+
+
+
+///////////////////////////
+// ver 4.3 (03/24/2021)  //
+///////////////////////////
+
+New Features:
+=============
+Trillium: Add ability to change order of preference for LTCLC
+MAVLink: Add setting for joystick decay.
+DJI: Initial work for FPV camera.
+MAVLink: Add unknown px4 custom mode.
+DJI: Add LightBridge settings.
+DJI: Add WiFi settings.
+DJI: Add OcuSync settings.
+Generic: Add herelink joystick mapping.
+Add "NO GPS" to map labels and turn callsign red if no gps.
+Anafi: Add parrot control format for mpp3 controller.
+Add "Deny" option for gimbal control request.
+Add ability to turn off gimbal control mode for observer.
+Add record capability.
+DJI: add isotherm presets.
+
+
+Updates and Bug Fixes:
+======================
+Improve video by increasing KLV frequency.
+Trillium: Fix gimbal control mode.
+Trillium: Fix Trillium camera steer by delta.
+Active routes now add the AGL altitude into the HAE Altitude so Marker is placed at correct altitude.
+Fix video frame going black when switching platforms.
+Increase flight logger increments to 2 secs.
+Fix minimap sizing on different devices. 
+Show minimap in mapshots.
+Fix minimap flickering.
+Handle exceptions/crashes for UASTool close and update.
+Make team human marker reflect team color in AR.
+Never disable "Show AR" checkbox.
+DJI Limit switch camera button to MATRICE and INSPIRE_2 models.
+MAVLink: fixup message handling.
+Fix invalidating spi by sending out 4 corners all at SPI.
+DJI: Change settings to use AIDL.
+Do null check for uasitem when doing gps check.
+Fix blue minimap after taking a mapshot.
+Fix mapshot crash by not switching to halfscreen when in fullscreen.
+DJI: Fix no-gps crash when lat/lon is NaN.
+Remove mount yaw_absolute kluge for anafi (they fixed it on the platform).
+Fix battery progress not drawing background ring correctly.
+Hide camera record button for platforms that can't record.
+Fix issue with quick orbit.
+DJI: Put in a warning that's says if the android device is too old that it won't run DJI.
+Turn off minimap for Android 7 and below.
+Check for type in AVMonitor.
+Fix gimbal control mode for operator on android <=7.
+Fix gimbal control button remains green after backing out of observer pane.
+Add logic to the observer to toggle the minimap visibility.
+Append the uid of the points in the route so that they don't conflict with original route.
+MAVLink: fix settings labels
+Fix observer RTH issues.
+Fix counter-intuitive toast messages.
+Fix mapshot controller button causes undesired effects when mapped to bumpers.
+Have the 4 corners invalidate if they go off the map.
+Fix OSD updating when opened after minimize.
+Changed mapshot function from UI thread to background thread.
+Add just-in-case exception check for number formatting.
+Do not add polyline shape to SPI CoT unless all vertices are valid.
+Fix NPE when loading observer.
+Stop osd when uastool shuts down.
+Fix pressing mapshot button while on chat menu for sending a mapshot causes ANR.
+BH3: object cleanup and error handling.
+Generic: fix loading/storing cot for aerocomputers.
+MAVLink: add TOGGLE VIDEO functionality for video source adapter #2.
+MAVLink: Added ZOOM IN and ZOOM OUT without MAVLink functionality.
+BH3: changes for adapter preference/auto-detect.
+DJI: Fix crash during quick record.
+Fix crash on unload.
+Add shutdown of osd scheduler for observer side.
+DJI: Add thermal unit (C/F) selection.
+Fix task widget showing when it shouldn't.
+MAVLink: Adjust HAL/quick stop alttitude/heading.
+MAVLink: Fix HAL vs MSL.
+BH3: changes to support PRS 4.1.
+When running a route while another route is already executing, queue the currently executing route and start the new route.
+MAVLink: Fix 0,0 logic.
+
+
+
+////////////////////////////
+// ver 4.2.1 (11/24/2020) //
+////////////////////////////
+
+New Features:
+=============
+Add new video UI.
+Added initial support for Trillium.
+Added initial support for Black Hornet 3.
+DJI: Add new thermal camera functionality.
+DJI: Add speaker quick record/play.
+R80D: Add stormcaster-t.
+Add remote controller pairing.
+Add 3rd party remote controller programming.
+Allow TAK Users without the UAS tool to View Active UAS Routes.
+Add Ability to Send UAS Route to Other Users.
+
+
+Updates and Bug Fixes:
+======================
+Fix APM mount control command scaling.
+Mavlink: prevent restarting monitor when switching video URI.
+Mavlink: fail gracefully instead of error.
+Trillium: Add buffering setting.
+Trillium: Fixes to video starting/changing.
+Added autofocus for Orion gimbals (if the active camera supports it).
+Fix plugin crashing on unload.
+R80D: update video preview refresh logic.
+Generic: gimbal control for AEROCOMPUTERS.
+Fix Quick Task marker does not reappear after stop/run.
+Mavlink: fix APM mount orientation.
+Mavlink: Add setting for forcing dialect.
+Mavlink: add the paladin payload UI and handlers.
+Mavlink: Add 2nd video field and video switcher button.
+DJI: Rework speaker settings.
+Added dropdown menu to quickbar for quick functionality.
+Mavlink: use yaw instead of heading.
+Allow quick task to select a marker.
+Mavlink RC Modes UI and Preference Setup.
+Mavlink: show UAS at 0,0 if no position reported.
+Mavlink: Convert gimbal position to have a "lock" button for keeping the sensor at a lla.
+Mavlink: Mode Selector.
+Mavlink: add armed/disarmed and mode status to buttonbar.
+R80D: Allow route to start from landed state.
+Keep updating the OSD even when the video disconnects.
+R80D: adjust default waypoint altitude to 200ft.
+Show Video URI when connecting (if possible).
+Hide reticle when uas stale.
+Now show video UI all the time.
+UAS Tool no longer closes when radial button is selected.
+Add Radial Menu Option to Hide/Show Active Route.
+Mavlink: Add QGroundControl Calibration.
+c: Added compass calibration.
+Mavlink: Add exponential setting for joystick control.
+Add option to remove a route point through the radial menu.
+Mavlink: Fix "hop up" issue with manual control on takeoff.
+Mavlink: Add Autopilot case 20 for sarcos.
+Mavlink: fix gimbal altitude when following target.
+Mavlink: change to relative altitude for reposition commands.
+Mavlink: Fix gimbal reset.
+Mavlink: use relative camera heading.
+Remove Quick Task marker after task is run.
+Mavlink: set home position.
+R80D: add ability to move home position.
+R80D: Have spinners update on load.
+Mavlink: fix Spoi altitude and update altitude AGL->HAL.
+R80D Fix video switching for x86.
+Make the spoi follow the object being tracked.
+Disable stopping between tasks.
+Add quickstop when quickfollow is disabled.
+Fix Move Guided and use it when there is only 1 waypoint in a mission.
+Add aircraftattitude and sensorattitude to generic.
+QuickFollow: Ability to select arbitrary marker and set distance.
+Add task request to stored task if sent locally and UAS not available.
+Mavlink: Keep gimbal at current location when setting ROI_NONE.
+Fix error in pitch/roll/yaw attitude cot creation.
+Mavlink: Add Pitch/Roll/Yaw.
+Display an error when UAS is not connected and trying to run a route.
+Make DJI speaker more robust.
+Mavlink: Fixup camera reset.
+Moved active route button to expandable menu on UAS to avoid covering up status information.
+QuickAltitude button defaults to "Land Now".
+Mavlink: set ROI_NONE when LTCLC is disabled.
+Fix NPE in reflector on invalid URI.
+Add DTED check for route validation.
+Disable video broadcast when connection or video stream lost.
+Add better error messages when taking pics.
+Indago: Fix video uri creation.
+Fix crash when attempting to run a route from a disconnected platform.
+Fix crash on mapshot in halfscreen.
+Fix Generic platform SPoI CoT generation.
+Fix FOV when camera is horizontal.
+Add UID to status metadata.
+R80D: Add Avahi config.
+Changes to avahi services to make it more flexible.
+R80D Enable quickfollow.
+Fix toolbar gimbal control icon to proper colors.
+Fix send button obscured when sending map shot from full-screen.
+Added show_waypoint_details which opens up waypoints menu.
+Restart PD100Monitor when network prefs change.
+Fix Param Illegal when attempting to yaw gimbal that does not support yaw.
+Mavlink: reload monitor when config changes.
+Avahi: Disable/hide radial button.
+Add labels and error message updates.
+Add better DJI sd card format error messages.
+Fix Callsign Override is does not take effect until UAS marker stales out.
+Now showing AGL on quickfly/orbit marker.
+Added route AGL too low warning.
+Convert routes from AGL to HAL.
+Convert quickfly to maintain altitude HAE.
+Fix waypoint finish action bug.
+Avahi: reorganize list update visibility settings.
+Prioritize selecting SPI over markers when in gimbal control mode.
+Add images to DJI RC stick modes.
+Only update status meta items if UAS entry is expanded and status is showing.
+Change default waypoint heading to remote controller.
+Added routes image for a completed task.
+Add ability to see KMZ Labels/Marks in UAS Tool's AR.
+Running man icon becomes green on active route showing.
+Quick flight marker is now always green to show its active.
+Active route now removes from map when task is finished.
+Added running icon toggle to UAS task list.
+Immediate update for active route showing.
+
+
+
+///////////////////////////
+// ver 4.1 (07/22/2020)  //
+///////////////////////////
+
+New Features:
+=============
+New Quick Flight Mode (Fly with No Controller).
+Added Mavlink specific settings.
+Rework UAS status UI.
+New UAS status summary data list.
+Add task progress bars.
+Add HAL as an altitude setting.
+Add UAS sorting.
+Added task sorting.
+Add gimbal azimuth text and line to OSD.
+Add pref to change OSD background color.
+Adding speed, altitude, and ETA labels to routes on map.
+New "Follow Me" functionality.
+Added radial menus to UAS Route points.
+Added DJI settings for choosing the joystick mode.
+Add ability to move active routes.
+Add ability to drag spoi/move gimbal during route tasks.
+Reworked preferences UI.
+Added ability to Pinch Zoom Observer FMV in UAS Tool Video Player.
+
+
+Updates and Bug Fixes:
+======================
+DJI: Change to pause when emergency stop is pressed.
+DJI: Fix KLV muxing for calculated data.
+DJI: Remove flightTime seconds adjustment.
+DJI: Fix NPE when in settings and DJI is selected platform, but ATAKGo is not running or installed.
+DJI: Add warning message on emergency stop dialog.
+DJI: Adjust orbit radius and speed sliders max/min on the fly.
+DJI: Fix HAL error in quickpoints.
+DJI: Error message if route goes below home altitude in "Safely" mode.
+DJI: Fix local CoT not restarting when re-connecting UAS.
+DJI/MAVLink: Add ability to customize Field of View.
+MAVLink: add source network UDP capability.
+MAVLink: add routes to observer overlay.
+MAVLink: fix quicktakeoff altitude parameters.
+MAVLink: remove connecting toasts, not useful.
+MAVLink: Add capability route Overlay.
+MAVLink: OrbitPoints added Goto Safely.
+MAVLink: Fix route in COT order, adjust max orbitspeed.
+MAVLink: supress battery voltage.
+MAVLink: Goto Safely requires some difference in altitude to add waypoint.
+MAVLink: Add a short pause to ensure mission finishes uploading before entering mission mode.
+MAVLink: Update FOV angles and true slant FOV calculation.
+MAVLink: Adjust route max speed and max/min altitude based on settings of connected UAS.
+MAVLink: add distance between waypoints check.
+MAVLink: Add "Finish Action" to routes.
+MAVLink: replicate DJI orbit behavior.
+MAVLink: Convert routes to a SimpleRoute of just waypoints.
+MAVLink: disable UDP/serial warning.
+MAVLink: Ardupilot modifications.
+MAVLink: change isFlying to report if not on ground.
+MAVLink: Cog Wheel Setting Ability to set speed defaultcruiseXY.
+MAVLink: fixup reconnect.
+MAVLink: Fixup change altitude and quickstop.
+MAVLink: TCP fix for lumenier.
+MAVLink: manual joystick control.
+MAVLink: AVAHI autoconfiguration.
+R80D: Update ADK 10.
+R80D: put current values in cogwheel text boxes.
+R80D: Update unit of measure on settings screen.
+AROverlay: Use angles to compute pixels instead of linear map.
+AROverlay: Fix altitude handling.
+Put AR into the Screenshot if AR is turned on.
+Fix hang when backing out of observer video while still connecting to stream. 
+Add H/V FOV in KLV.
+Add aircraft heading/pitch, camera [relative] azimuth/pitch to KLV.
+Fix MSL->HAE conversion on observer side.
+Fix issue with changes to AR setting not taking affect until restart of ATAK.
+Update new task process to warn about no platform.
+Fixed orbit speed bug.
+Enable SpoI Dragging on observer side.
+Fix KLV handling on observer side.
+Combine touch marker and crosshair for dragging the SPoI.
+Fix quick takeoff default values.
+Handle reticle color changes for observer video overlay.
+Update new task dialog to reflect current platform and task capabilities.
+Show transition from gimbal control requested to active on the button for observer.
+Add capability value for orbit speed unit type - angular or linear.
+Fix crash in observer map shot when video is not being broadcast.
+Show route points on map "in the air".
+Add fallback to operator location on panTo when uas location is null.
+Fix for 3D view of highlighted point being edited.
+Protect against NPE if ATAKGo is not installed or connected.
+Fix route points not changing color.
+Fix for mapshot being placed on wrong UAS.
+Change gimbal control button highlight to yellow when in pending state.
+Quickbar back button now hides UAS Tool when applicable.
+Clear AR markers if FOV is stale.
+Give warning on spoi drag if DTED not installed.
+Add warning message to operator gimbal control if they turn it on when running a route task.
+Update observer from each KLV frame rather than just on state changes.
+Add AR overlay to mapshot images.
+Add Speed to UASTool overlay options.
+Add PanTo button to operator and observer controls.
+Video Settings - Account for Flat Network Topology.
+Enable multiple simultaneous tasks.
+Add altitude/takeoff/land/rth/isflying in cot.
+Send stop/cancel status back to observer.
+Fix Spoi dragging and hide/show routes.
+Fix NPE crash when hitting the plus button when the device does not have GPS.
+Orbit Speed now listed as seconds per orbit or linear speed.
+Change platform selector to not save until Ok.
+Add ability to import a route by clicking on a segment of the route.
+Add ability for user to select a Doghouse object from the map to import the associated route.
+Add signal strength to status data.
+Fix up obstacle range for OSD.
+Add "link" to HOME CoT.
+Dialog box now pops up if DTED is not installed.
+Add sensor range/viewcone to cot.
+Fix crash related to flying status.
+Show AGL and orbit radius when showing Routes.
+Fix up stored tasks for title overrun.
+Remove meta tags button from uas status entries.
+Don't stop logger on disconnect.
+Add orbit radius information to the CoT, so receiving devices can show orbit points on the route.
+Add check for running task or observer control when closing UAS Tool.
+Give the orbit circles a title in the overlay manager.
+Resize OSD reticle for no overlap.
+Update quick fly and quick follow icons.
+Don't show gimbal azimuth on OSD compass if UAS can't yaw gimbal.
+Change default of route tasks altitude and speed settings.
+Fix double tap on dropdownclose from confirm dialog.
+Keep quick stop always clickable, let the UASItem determine if it can stop or not.
+Store tasks when complete, don't requeue.
+Fix bad dialog titles on some prefs.
+Fix issue where changing the route task name duplicates it on the map.
+Check to Make Sure User Accepted Permissions.
+Generic: Enable play button always.
+Fix multicast/UDP video source adapter if Network monitor not installed.
+Quick Fly Orbit Marker on map should now have altitude.
+Fix Cannot Quick Fly Operator if Tasking as Observer.
+Ardupilot takeoff and logging.
+Fix for reload crash.
+Fix black borders above and below the video screen act functionally as a part of the video.
+Add seconds label to message log.
+Remove Gradual Turn as a waypoint heading choice.
+Fix for not allowing routes with blank names and no points.
+Change default orbit heading to Towards Point.
+Fix Spot Markers render as gray in AR View.
+Fix for if the drop down is open to observer or operator view when the user hits the edit option on a route point, close the observer or operator view and open the edit view.
+Fix for Selecting Overlays from Radial while UAS Tool open forces UAS tool pane into the background.
+Fix Observer gimbal button state.
+Fix quickbar in observer mode "first time" problem.
+Add toast responses sent to an Observer when their route task or quick flight point is being executed.
+Add Gimbal Control request pop-up window text.
+
+
+///////////////////////////
+// ver 4.0 (03/25/2020)  //
+///////////////////////////
+
+New Features:
+=============
+Created an ATAK-Civ variant of UAS Tool and ATAKGO.
+Improved the Operator experience for loss of video.
+Draw orbit circles on moving map when viewing routes.
+Added an quick fly toolbar that persists in all panes and states of the UAS Tool that includes takeoff/return to home, emergency pause/stop, set altitude, etc. (depends on platform selected).
+Added multi-point editing of routes.
+Added R80D by FLIR platform.
+Explored inclusion of Active Track for DJI.
+Explored inclusion of Smart Controller for DJI.
+Added MAVLink/Pixhawk4 support for routes/tasking. Only supports TCP reliably, pending UDP and serial integrations.
+Extensive testing/troubleshooting for specific firmware versions and Trellisware network configurations were worked for the Indago platform.
+Extensive updates and improvements were added to the Generic Platform capability to make better use of the parsed MISB KLV data within the FMV.
+The Black Hornet 3 (BH3) can now fly waypoint routes.
+Refactored CameraShot to add a high level internal storage folder on the ATAK EUD for users to easily get their high-resolution DJI camera captures.
+Refactored pulse width modulation (PWM) triggers for Matrice platforms.
+
+
+Updates and Bug Fixes:
+======================
+Mavlink Get LTCLC and AR working.
+DJI Update task UI when quickbar emergency stop is pressed.
+Change picture marker location to uas.
+Enable overlays button on observer pager. 
+Hide flight buttons on landing pager. 
+Hide quickbar on fullscreen observer video.
+Refactor the quickbar. Add takeoff altitude.
+MAVLink: Fix tag name.
+Mavlink: Change mission status to reflect quickstop.
+Mavlink Goto Safely.
+Mavlink: RTH mode.
+Mavlink: Refactor socket creation.
+Running a route task will now automatically view and pan-to the route on the map.
+Mavlink: Quick stop on altitude change.
+Fixed extensive Android 10 issues to include a required DJI SDK update.
+Refactored ATAKGO to remove all interfaces. Fixed issues introduced by running ATAKGO in the background.
+Fixed DJI Mavic 2 Enterprise Dual suspected speaker attachment issues.
+Mavlink: Adjust RoI Altitude.
+Orbit display on map now changes dynamically when radius changes.
+Hide active tracking button until working.
+Add additional EXIF data to pics to display view cone on map.
+Change flight logs screen to only load log files on demand.
+Mavlink change from course to heading.
+Mavlink: Warn user UDP And serial are not working.
+Add Connecting and Lost Connection/Retry to Operator video preview pane like Observer pane has. 
+Mavlink: Adjust altitude handling.
+Mavlink: Have connection time out.
+Use dted elevevation for SPoI drag and drop.
+Mavlink: update dronekit to support mount-orientation message.
+Change gimbal control button help to reflect doubletap to reset.
+Update quick altitude to incorporate current uas altitude and user altitude units/format.
+Make quick toolbar float in fullscreen.
+Update quick bar based on active pager.
+DJI: Update Cot Creation methods.
+Save a copy of pictures taken to the sd card (/uastool_images).
+DJI: Fixup gimbal roll/pitch/azimuth.
+DJI Fix elevation handling.
+Implement overlays, messages and flightlog buttons on quickbar.
+DJI: USE EUD Position if no fix from UAS else 0,0.
+MavLink: Orbit points.
+Restored the big red triggers for PWM actuation on DJI Matrice platforms.
+DJI: Update Civ unlock button brings up login screen.
+Update DJI record sound screen.
+Remove Pushpins.
+Mavlink: Add UASRoute capability.
+DJI: disable unlock button if civ/intl.
+Modify build to have secure/civ versions.
+Updates to fix route point conversions for platform and type.
+Updates for AR.
+Fix for crash in description when no finish action on point.
+Do not try to install RSVPN if its a CIV brand of ATAK.
+RTSP Media Handler Fix.
+Add tracking items to UI.
+DJI: Activate/unlock one-step.
+R80D: Only show offsprey if on board.
+R80D Fix Offsprey camera, change update of FOV to defer to UASTool Computed.
+Refactoring to use capability flags rather than platform specific code.
+R80D/Ltclc: Compute 4 corners in atak via angles.
+R80D: rework cameras.
+R80D: Settings.
+r80D payload latch/unlatch.
+R80D: update ADK header Files.
+R80D: refactor connection state tracking.
+R80D add zoom.
+R80D Rebrand "Aeryon" as FLIR.
+Refactor and simplify overlayMap and tie in to capabilities.
+R80D: flight time & ltclc drag spi 
+R80D: Speed of aircraft (m/s).
+R80D: Battery Status monitor.
+R80D Fix Altitude, Hide LTCLC and Time In flight, remap battery status.
+R80D fix battery status and metadata.
+Change PD100 to BH3.
+PD100 set range to enable FOV cone. 
+R80D: version 8.2 ADK.
+R80D: WIP Click and move SPoI on map.
+Clean up and reorganize reflector code.
+Updates for PD100 route tasking. 
+
+
+///////////////////////////
+// ver 3.13 (11/24/2019) //
+///////////////////////////
+
+New Features:
+=============
+Added new tasking (with remote tasking) UI.
+Added unlock icon on main screen for DJI UAS.
+Added UAS flight logging.
+Added Indago platform.
+Added operator toolbar. 
+Add handling of source interface for multicast video sources.
+Added the option to display the range to the nearest obstacle for DJI platforms.
+
+
+Updates and Bug Fixes:
+======================
+Indago Name fix (INDAGO vs UAS-Callsign).
+Indago Add battery Status Metadata.
+Fix unlock button logic by creating "UNLOCKABLE" capability.
+Disable Look at Point for Mavic Pro and Spark on editors. 
+Set operator video invisible initially to prevent it showing on dropdown showing if operator has not been active yet.
+Remove DJI finish action when current last point when adding new point.
+Sort tasks in descending order.
+Fix multiple running tasks.
+Updated to use the LOG_FILE_ID for checking valid flight logs.
+Fix route point problems caused by switching platforms.
+Fixes to not turn on video surface when returning to plugin dropdown and video surface had been hidden due to swipe action.
+Fix crash after new route creation.
+Updates to observer video handling.
+Fix "Missing flight log to view data" messages in flightlog.
+Fix DJIMonitor crashes.
+Improve DJI route drawing for overlays. 
+Handle corrupted flight log files more gracefully.
+Disable fullscreen plugin mode. Does not affect full screen UAS video. 
+Updates to DJI route tasking. 
+Better Observer side feedback on Operator tasks.
+Drop LtCLC remote point touches with null point.
+Remote LtCLC now working.
+Add toast log button to observer side.
+Use connected UAS updated values for metadata in favor of same data in marker metadata.
+Fix Wowza port default to set to 1935 and not pull in multicast port setting.
+Add icons to route drawing.
+Make sure units update with pref changes.
+Observer pane lets you know now if the operator is broadcasting.
+If not broadcasting send an empty __video element in the UAS CoT to clear out the URL on the marker.
+Add ability to change route point types.
+INDAGO: Fix Altitude reporting.
+Update dark button style to match modern ATAK.
+Add PAN TO when viewing route on map.
+Update import of ATAK routes.
+Added panning to flight log.
+Added ability for sending flight logs.
+PD100 fix camera and UAS pitch.
+Add ability to create new route task from scratch.
+Add ability to move, copy, delete route points.
+Fixed the slow response with the flight log.
+INDAGO: Update marker GeoPoint.
+Implement task colors.
+Indago: Fix Remote LTCLC.
+Queue LTCLC remote requests when already in LTCLC mode.
+Add Pick Coordinates functionality of point editor.
+Fix for multiflavor building of plugins.
+UAS wifi-style selector / Atak go only for DJI.
+Fix problem when imported points altitude out of bounds.
+Handle DJI diagnostic updates and display as toast and in UAS dropdown expandable.
+Flight log formatted displaying log item to match atak settings.
+DJI If the current position or the target waypoint in a route has a higher ground level than takeoff, then use then fly at the specified altitude AGL above that target point.
+Added DTED data to the flight log alt display.
+Update Icon and rebrand "LtCLC" to "Gimbal Control".
+INDAGO: add LtCLC support.
+MAVLink platforms now support rtsp video.
+Update ATAKGo to not report newly connected UAS until serial number is retrieved.
+Added sorting to the flight log.
+Add ability to delete flight log files. Auto refresh of flight log list.
+Add ability to step thru flight log item data.
+INDAGO: add zoom capability.
+Force flight logger to work in temp dir until completion.
+Include toasts in flight log.
+Added pref for flight logger.
+Fixed empty log file issue.
+PX4 vehicles no longer keep yawing after arriving at the target of a move task.
+Tasking to a point now works in the px4-sitl with prototype nighthawk firmware.
+Update MavlinkVehicle library to a version with better UDP support.
+Re-introduced pitch cap to prevent going over the horizon with the FOV.
+INDAGO: Update Camera FOV for AR.
+Changes to use four corners FOV data from UAS KLV for AR and LtCLC on operator view. 
+Move AR/LtCLC update to pull from UAS rather than pushed from reflector. 
+Fixed a bug where clicking the LTCLC button in observer did not disable control on LTCLC.
+Fixed a bug where double tap wasn't resetting LTCLC gimbal.
+INDAGO: use local DTED for SPOI R&B.
+Indago, Fix Default ports for VCT and Video were swapped.
+Fix crash when broadcasting and some preferences are not configured.
+Remove queued received task if cancel is received.
+Remove the LTCLC marker when control is disabled.
+INDAGO: Set Camera heading to account for UAS heading.
+INDAGO: Fix altitude precision and gimbal angle & pitch.
+Fix AR icon lookup.
+More work on IP and port preferences.
+Fix for Received Tasks crash.
+Read go home battery percent and flight time remaining from CoT.
+INDAGO Preferences and video source adapter.
+INDAGO Update to account for changes in the base API.
+Hide observer video surface and stop observer video processing when user navigates away from observer pager.
+Fixed a bug where the operator FOVCenterTask was not reading the point from the CoT.
+LTCLC Added logic to check if any of the points in the FoV are null when setting it.
+Updates to observer video rendering and snapshot for changes made to ATAK core video code. 
+Turn OSD back on for observers. 
+Update for changes in core mobilevid library
+Fixes for generic platform initial connection.
+Rework preferences around Last Octet option and Destination URL.
+Updated mavlink library.
+Added the option to choose between TCP and UDP networking for mavlink.
+DJI digital zoom fix. 
+Better messaging of pre-attached DJI accessories. 
+Fix crash for multicast option with Last Octet off and no IP address has ever been configured. 
+Add UAS operation warning toast on plugin open. 
+Update PD100 to use newer URL logic. 
+PD100 Changes to support signal strength capability flag.
+Minor fix to pwm R trigger frequency.
+Updates to marker selection for AR and getting bitmaps for marker icons.
+
+
+///////////////////////////
+// ver 3.12 (07/31/2019) //
+///////////////////////////
+
+New Features:
+=============
+Video broadcasting optimization.
+Added Gimbal Command to Geopoint / LTCLC Implementation.
+Added Observer mode video preview.
+Added feature to use last octet of device's IP address as the last IP of the broadcast multicast address and as an offset for a base port number.
+Added preference to show battery percentage or voltage in UI.
+Added AV mapshot and camerashot.
+Created a Pix4D wrapper for WinTAK plugin.
+Implemented GDAL conversions in the 3D Map Creator.
+UAS Tool now calculates when the SPoI is hitting an elevation point along its trajectory from the UAS.
+Operator mode user can drop a screenshot marker onto the map from the center SPoI point and the user can now see markers as AR overlays when in LtCLC mode.
+UASs now have unique UIDs to allow UAS Tool to continue tracking them properly when disconnects happen.
+Automatically attach the AV multicast UDP stream to the CoT marker.
+Stopping UAS Tool now automatically stops ATAKGo.
+Four corners data is now included with KLV as well as with the SPoI CoT.
+Added filter to only display selected map-label metadata if it is supported by the marker's platform.
+Added pinch zoom gesture for digital zoom on video preview.
+AV Wasp has been added to the UAS Tool compatible platforms.
+Added DJI controller re-programming.
+Added ability to record, select and play a sound on DJI speaker accessory.
+Added ability to turn on/off DJI spotlight and beacon accessories.
+Added ability to switch DJI thermal camera modes.
+Tapping on the gimbal display on the OSD will now snap the gimbal between 0 and -90 degrees.
+Added preferences to show/hide Flight Time Bar and AR Items on OSD.
+Enable map picture drop for AV operator.
+Change to UDP quick url for AV.
+Added gimbal pitch to OSD compass.
+Added gimbal VFOV to OSD compass.
+Mux in KLV to broadcast video stream.
+
+
+Updates and Bug Fixes:
+======================
+Fixed negative Heading for AV Birds in Playbacks.
+Fixed UAS Tool Operator Video Preview Lag.
+Fixed AV Full Screen Video Size.
+Fixed device sizing for seeing buttons.
+Fixed AV metadata updated as much as we can until we get further info from AV.
+Fixed AV route toggling off the route does not full toggle off the ABCD.
+AV IP and Port preferences removed, hard coded IP and port is calculated from node data packet. 
+Fixed error with handling of AV non-default SUID.
+AV disconnect detected and reflected in UI, successfully reconnect and continue.
+Fixed - Restart AV video after timeout.
+Video + Basic PLI relabeled as Video + MISB.
+KLV parsed so it works with Generic Video and others.
+Fixed an Observer side crash related to the cog wheel.
+Fixed pixelated video preview bug.
+Fixed bug where DJI signal strength didn't update regularly.
+Fixed DJI where Spark UAS would not fly tasks.
+Fixed WinTAK crash when running 3D map creator using Pix4D.
+Fixed too many toasts bug when connection lost to ATAKGo.
+Metadata that is not available for a platform is removed from the full screen UI to reduce clutter.
+Fixed a bug where video and OSD were not aligned in a mapshot.
+Fixed a bug in DJI specific settings where long error messages rendered the UI unusable.
+Added code improvements to make APK installation incremental and use version checking.
+Min/max values are now in for all DJI settings.
+ATAKGo now stops video preview before starting a new one.
+DJI Orbit around point task now working correctly.
+Fixed WinTAK crash when viewing UAS Tool video stream.
+Tasking units now match core ATAK user-defined units.
+Deconflicted gestures on video preview between normal and LtCLC modes.
+Added uas callsign to DJI HOME marker.
+Fixed crash when using mapshot on Observer side.
+Fixed crash when Wowza port number is incorrect.
+Fixed video going to black when using mapshot on Observer side.
+Changed  map shot naming scheme to match point dropper naming.
+Fixed problems when changing Platform Detection Type pref while UAS is connected.
+Map shots are no longer erroneously included in the task list.
+Fixed problem where changing callsign creates duplicate entry in Broadcasting list.
+Gimbal pitch and VFOV now show up in the OSD observer side for any UAS that includes the values in its CoT.
+Fixed off-center button icons on Operator and Observer control screens.
+Fixed video preview for Mavic 2.
+Toast messages from ATAKGo are now saved in the UAS Tool Flight Log.
+Observer and Operator battery percentage for the same UAS should now match.
+AV platforms combined into a single platform selection. Display updates dynamically for detected system.
+Made LtCLC touch a purple outlined crosshair.
+Make sure "SD card is NOT inserted" message only appears once per connection.
+AV video was tweaked in the video preview frame as best as possible.
+AV destination adapter is now properly being used.
+Taking pics now handles no GPS better when dropping map marker.
+UAS Tool no longer starts multiple video previews.
+Add broadcast of CoT for Generic platform selection if video has sufficient KLV data.
+Change button style to match core ATAK.
+Wire in preferences for broadcast video encoding.
+Move task persistence to use CoT instead of gson.
+Rework parsing of video broadcast preferences from selection arrays.
+Properly fill in the network device list.
+Updates for RTSP video broadcast.
+UASTool will now attempt to restart ATAKGo if it crashes or closes, but will give up if it crashes twice within seconds.
+If the DJI platform is plugged in before UASTool is started, it will now show up in UASTool.
+Set preference enabled state based on broadcast destination.
+Implement KLV pass through for non-DJI.
+Updates to URL string defaults.
+Disable video broadcast if Broadcast Data is set to Only UAV Data.
+When stopATAKGo is called, ATAKGo will no longer be restarted automatically if it exits.
+Fixed a bug where pwm settings were not recognized as being initialized on DJI platforms.
+Change broadcasting uas list UI if the marker stales out.
+Fix new connected UAS from being added to Broadcasting UAS.
+Fixed a bug where PWM triggers could not be re-enabled after being hidden in settings.
+Turn off preview on lost connection.
+Fix for viewing new observer video after observer has Lost Connection.
+Add gimbal data for AV operator.
+Stop broadcast encoder on preview stop.
+Filter rsvpn interface from IP address selection.
+Use MSL altitude for image exif attributes.
+Suppress display of marker and spi from video played by core video player for UAS markers handled by UASTool.
+DJI save pictures to internal storage (with fallback to sdcard) and delete after saving on device.
+Add option to display battery level as percentage (current behavior) or voltage.
+Add outbound interface argument to EncoderConfig. Use default TTL for now. 
+Hide video preview on page change.
+Add scrolling to the Connected UAS list.
+Add SSL option for Wowza video destination.
+New handling of UAS metadata updates.
+
+
+/////////////////////////////////
+// ver 2.x (approx. 04/05/2019)//
+/////////////////////////////////
+
+New Features:
+=============
+New swiping UI.
+Split UAS list into Connected and Broadcasting lists.
+Added LTCLC control to the operator view.
+Added repeating toast message for no UAS GPS signal.
+Now shows battery percent on landing screen instead of voltage.
+Battery overlay now shows remaining percentage instead of voltage.
+Added show/hide route/waypoints to Overlays screen.
+Added a log that captures toast messages that can be reviewed by the user.
+Make preview video go blank when connection to UAS is lost.
+Waypoint and orbit point tasking working again.
+DJI Orbit point orbit max speed now updates automatically when orbit radius is changed.
+Added preference to change camera reticle color and transparency.
+
+Add OSD button to enter/exit fullscreen. Removed double click for fullscreen.
+Change to using slant range to target on OSD.
+Change to using 0 to 360 for camera azimuth on OSD.
+Triggers now show on OSD.
+Added basic camera digital zoom controls to full screen OSD.
+All OSD items should now accurately reflect core ATAK unit preferences.
+Change show/hide OSD to fling gesture on preview window.
+
+DJI settings screen now shows user selected ATAK core units.
+Added ability to format sd card and internal storage to DJI settings screen.
+Add calibration checks for accelerometer, gyroscope, compass and gimbal to DJI settings screen.
+Add ability to calibrate accelerometer, gyroscope, compass and gimbal in DJI settings screen.
+Added ability to set video resolution and frame rate to DJI settings screen.
+
+Added ability to take video preview and uas camera pictures.
+Add EXIF data to pictures. Save pictures to ATAK gallery.
+Set DJI pictures storage location to SD card (if it exists).
+Drop marker on map when taking picture and add ability to send picture to team members.
+
+Get four corners from AV video KLV and add to SPI cot.
+Added the h.264 RTP option to video settings for DJI platforms.
+Added an RTMP settings option.
+Began adding klv implementation.
+Added four corners to mpeg rtp stream.
+
+Updates and Bug Fixes:
+======================
+Improved AR icon positioning by reworking the algorithm that rectifies points to the FOV.
+Use ATAK's icons for the items in the AR display.
+Made the LTCLC touch SPI a purple outlined crosshair with no text.
+Onboard SDK settings should now show when appropriate.
+AR Overlay now only shows when OSD is enabled.
+Fix problem when switching EUD on same UAS by using UAS serial number for UID.
+LTCLC touch marker is now removed when control is released.
+Fixed a bug where centerpoint was null.
+Task point min/max now reflect any user defined changes.
+Fix for metric only units in error messages.
+Fix for ignored speed in waypoint task.
+Fixed the quick pics from the UAS, showing up in the tasking list.
+Waypoint and orbit tasks should now handle different core ATAK unit changes.
+Fixed a bug related to negative headings in LTCLC.
+Switching between devices with and without onboard SDK support now handles PWM properly
+Fix for UAS and TGT bearing calculations on OSD.
+Fix for DJI reporting flight time in seconds as 10*seconds.
+Fix for TGT sR&B not updating on OSD.
+Fixes for problems found while testing with AV platforms.
+Fix for OSD not resuming updating after losing connection and reconnecting.
+Handle crashes related to trying to send intents to ATAKGo while UAS Tool is in the background.
+Fix not being able to click on OSD buttons when LTCLC is active.
+Fix bug in DJI preferences BroadcastType and VideoQuality.
+Update UAS Tool icon. 
+Combine text on preview fragment to save space for buttons.
+Make detection of connected DJI UAS more accurately reflect what is happening.
+PWM Settings display bugfixes.
+Bugfixes for state of right trigger.
+Updates for AV video and KLV handling.
+Fix radial menu crashing. 
+Remove toggle routes from radial menu.
+Tidy up the buttons on the operator control fragment.
+Fix bugs with Connected vs Broadcasting and with reopening UASTool.
+Rewire in the "ask to close when broadcasting" dialog.
+Fix back button usage when video preview is fullscreen.
+Fix UAS Tool crash when re-entering.

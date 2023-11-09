@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/lightBlueALPHA" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/button_trillium_camera_eo" android:background="@android:color/transparent" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_trillium_eo" android:scaleType="fitCenter"/>
+    <ImageButton android:id="@+id/button_trillium_camera_ir" android:background="@android:color/transparent" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_trillium_ir" android:scaleType="fitCenter"/>
+    <ImageButton android:id="@+id/button_trillium_focus" android:background="@android:color/transparent" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_trillium_focus" android:scaleType="fitCenter"/>
+</LinearLayout>

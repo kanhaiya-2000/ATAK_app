@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="DJI Settings" android:key="DJI"/>
+    <PreferenceCategory android:title="Remote Controller" android:key="dji_rc"/>
+    <com.atakmap.android.gui.PanPreference android:title="RC Joystick Mode" android:key="uastool.dji.pref_rc_mode" android:summary="@string/dji_pref_rc_mode_sum"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="Local Data Mode" android:key="uastool.dji.pref_ldm_mode" android:summary="@string/dji_pref_ldm_sum"/>
+</PreferenceScreen>

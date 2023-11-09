@@ -1,0 +1,17 @@
+<menu buttonRadius='65' buttonSpan='32.73' buttonWidth='60' buttonBg='bgs/button.xml'>
+
+    <button icon='icons/clear_tracks.png'
+        onClick='actions/clearroute.xml' />
+
+    <button icon='icons/routes.png'
+        onClick='actions/addroute.xml' />
+
+    <button icon='icons/edit2.png'
+        onClick='actions/editroute.xml'
+        selected='${pRouteVisible}' />
+
+    <button icon='icons/email_icon.png'
+        onClick='actions/sendroute.xml' />
+
+</menu>
+

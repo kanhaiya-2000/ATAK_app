@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.mavlink.MAVLinkSettingsScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/mavlinksettings_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/mavlinksettings_title_text" android:paddingTop="6dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mavlink_platform_settings"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageButton android:gravity="end" android:id="@+id/mavlinksettings_refresh_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_refresh" android:contentDescription="TODO"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/general_text" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_cruisespeed_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_cruisespeed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cruise_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_cruisespeed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_cruisespeed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_cruisespeed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_maxspeed_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxspeed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cruise_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxspeed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_maxspeed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_maxspeed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_max_manual_speed_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_max_manual_speed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cruise_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_max_manual_speed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_max_manual_speed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_max_manual_speed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_takeoff_alt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_takeoff_alt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/takeoff_altitude_text" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_takeoff_alt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_takeoff_alt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_takeoff_alt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/calibration" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_calibcompass_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_calibcompass_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_compass" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_calibcompass_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <ImageButton android:id="@+id/mavlinksettings_calibcompass_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/compass" android:contentDescription="TODO"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_restrictions" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_maxalt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxalt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxalt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_maxalt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_maxalt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_maxdist_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxdist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_dist_restrict" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_maxdist_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/mavlinksettings_maxdist_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_maxdist_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_geofencelimitaction_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_geofencelimitaction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/geofence_limit_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_geofencelimitaction_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/mavlinksettings_geofencelimitaction_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="left" android:id="@+id/mavlinksettings_failsafe_text" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/failsafe_behavior" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_connloss_action_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_connloss_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_loss_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_connloss_action_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/mavlinksettings_connloss_action_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_connloss_with_rc_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_connloss_with_rc_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_loss_with_rc_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_connloss_with_rc_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/mavlinksettings_connloss_with_rc_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_lowbatteryaction_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_lowbatteryaction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_battery_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_lowbatteryaction_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/mavlinksettings_lowbatteryaction_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_lowbatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_lowbatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_batt_pct" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_lowbatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mavlinksettings_lowbatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_lowbatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_gohomebatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_gohomebatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_batt_pct" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_gohomebatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mavlinksettings_gohomebatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_gohomebatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_landbatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_landbatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/land_now_batt_pct" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_landbatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mavlinksettings_landbatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_landbatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_gohomealt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_gohomealt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_gohomealt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mavlinksettings_gohomealt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_gohomealt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_recoveryspeed_layout" android:paddingBottom="14dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_recoveryspeed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recovery_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_recoveryspeed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/mavlinksettings_recoveryspeed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/mavlinksettings_recoveryspeed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/mavlinksettings_set_home_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_set_home_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_position" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/mavlinksettings_set_home_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <Button android:gravity="center" android:id="@+id/mavlinksettings_set_home_button" android:paddingLeft="10dp" android:layout_width="200dp" android:layout_height="40dp" android:src="@drawable/action_pick" android:scaleType="fitCenter" android:text="@string/pointedit_coord_place" android:drawablePadding="-40dp" android:layout_alignParentRight="true" android:contentDescription="TODO" android:drawableStart="@drawable/action_pick" android:layout_marginEnd="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.atakmap.android.uastool.mavlink.MAVLinkSettingsScreen>

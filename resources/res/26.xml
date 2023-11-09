@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/video_ui_transparent"/>
+    <stroke android:width="@dimen/uastool_ui_button_stroke_half" android:color="@color/video_ui_danger"/>
+    <padding android:left="@dimen/uastool_ui_button_padding_half" android:top="@dimen/uastool_ui_button_padding_half" android:right="@dimen/uastool_ui_button_padding_half" android:bottom="@dimen/uastool_ui_button_padding_half"/>
+    <corners android:topLeftRadius="@dimen/uastool_ui_button_radius_half" android:topRightRadius="@dimen/uastool_ui_button_radius_half" android:bottomLeftRadius="@dimen/uastool_ui_button_radius_half" android:bottomRightRadius="@dimen/uastool_ui_button_radius_half"/>
+</shape>

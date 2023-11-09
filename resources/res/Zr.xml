@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/storedtasks_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@+id/storedtasks_add" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="4dp" android:src="@drawable/ic_menu_plus" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/storedtasks_sort" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/action_sort" android:layout_alignParentTop="true" android:layout_marginStart="2dp" android:layout_toEndOf="@+id/storedtasks_add" style="@style/darkButton"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/storedtasks_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/stored_tasks" android:singleLine="true" android:layout_alignTop="@+id/storedtasks_add" android:layout_alignBottom="@+id/storedtasks_add"/>
+        <ImageButton android:id="@+id/storedtasks_delete_all" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/action_delete" android:layout_alignParentTop="true" android:layout_marginStart="2dp" android:layout_alignParentEnd="true" style="@style/darkButton"/>
+        <ListView android:id="@+id/storedtasks_list" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:divider="#000000" android:dividerHeight="6px" android:layout_below="@+id/storedtasks_add"/>
+    </RelativeLayout>
+</LinearLayout>

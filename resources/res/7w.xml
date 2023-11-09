@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Utilities Preferences" android:key="UTILITIES"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_capture_to_storage" android:key="uastool.pref_capture_to_storage" android:summary="@string/pref_capture_to_storage_sum" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_log_flight_data" android:key="uastool.pref_log_flight_data" android:summary="@string/pref_log_flight_data_sum" android:defaultValue="true"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_agl_danger_low" android:key="uastool.pref_agl_danger_low_input" android:summary="@string/pref_agl_danger_low_sum" android:dialogTitle="@string/pref_agl_danger_low" android:inputType="number"/>
+</PreferenceScreen>

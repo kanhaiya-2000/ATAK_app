@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/config_trillium" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UAS IP"/>
+    <EditText android:id="@+id/trillium_uas_ip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UAS PORT"/>
+    <EditText android:id="@+id/trillium_uas_port" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Source Adapter"/>
+    <com.atakmap.android.gui.PluginSpinner android:id="@+id/trillium_video_source_adapter" android:layout_width="match_parent" android:layout_height="40dp" style="@style/darkButton"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Trillium SDK IP"/>
+    <EditText android:id="@+id/trillium_sdk_ip" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Trillium SDK PORT"/>
+    <EditText android:id="@+id/trillium_sdk_port" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Buffering (ms)"/>
+    <EditText android:id="@+id/trillium_video_buffering" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

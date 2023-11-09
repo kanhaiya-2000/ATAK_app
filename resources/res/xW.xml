@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Controller Preferences" android:key="Controller"/>
+    <com.atakmap.android.gui.PanPreference android:title="Controller Mapping" android:key="uastool.controller.mapping" android:summary="Select the flight modes/vehicle functions activated by each joystick button"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Joystick Sensitivity" android:key="uastool.controller.pref_joystick_sensitivity" android:summary="@string/mavlink_joystick_sensitivity" android:defaultValue="0"/>
+    <com.atakmap.android.gui.PanPreference android:title="RC Joystick Mode" android:key="uastool.controller.pref_rcstick_mode" android:summary="@string/dji_pref_rc_mode_sum"/>
+</PreferenceScreen>

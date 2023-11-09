@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="User Interface Preferences" android:key="UI"/>
+    <com.atakmap.android.gui.PanPreference android:entries="@array/reticle_names" android:title="@string/pref_reticle_image" android:key="uastool.pref_reticle_image" android:summary="@string/pref_reticle_image_sum" android:defaultValue="res/drawable/reticle_01.png" android:entryValues="@array/reticle_values"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/reticle_sizes" android:title="@string/pref_reticle_size" android:key="uastool.pref_reticle_size" android:summary="@string/pref_reticle_size_sum" android:defaultValue="Medium" android:entryValues="@array/reticle_sizes"/>
+    <com.atakmap.android.gui.PanPreference android:title="@string/pref_reticle_color" android:key="uastool.pref_reticle_color" android:summary="@string/pref_reticle_color_sum"/>
+    <com.atakmap.android.gui.PanPreference android:title="@string/pref_osd_background_color" android:key="uastool.pref_osd_background_color" android:summary="@string/pref_osd_background_color_sum"/>
+    <com.atakmap.android.gui.PanPreference android:title="@string/pref_osd_text_color" android:key="uastool.pref_osd_text_color" android:summary="@string/pref_osd_text_color_sum"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_agl_override" android:key="uastool.pref_agl_override" android:summary="@string/pref_agl_override_sum" android:defaultValue="true"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/battery_level_units" android:title="@string/pref_battery_units" android:key="uastool.pref_battery_level_units" android:summary="@string/pref_battery_units_sum" android:defaultValue="Percentage" android:entryValues="@array/battery_level_units"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/joystick_virtual_types" android:title="@string/pref_joystick_virtual" android:key="uastool.pref_joystick_virtual_type" android:summary="@string/pref_joystick_virtual_sum" android:defaultValue="Buttons" android:entryValues="@array/joystick_virtual_types"/>
+</PreferenceScreen>

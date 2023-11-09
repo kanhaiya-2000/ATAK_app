@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@android:id/background" android:left="2dp" android:top="2dp">
+        <shape>
+            <solid android:color="@color/video_ui_transparent"/>
+            <stroke android:width="2dp" android:color="@color/video_ui_buttonshadow_color"/>
+            <padding android:left="0dp" android:top="0dp" android:right="2dp" android:bottom="2dp"/>
+            <corners android:topLeftRadius="@dimen/uastool_ui_button_radius_full" android:topRightRadius="@dimen/uastool_ui_button_radius_full" android:bottomLeftRadius="@dimen/uastool_ui_button_radius_full" android:bottomRightRadius="@dimen/uastool_ui_button_radius_full"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/custom">
+        <shape>
+            <solid android:color="@color/video_ui_transparent"/>
+            <stroke android:width="@dimen/uastool_ui_button_stroke_full" android:color="@color/video_ui_pending"/>
+            <padding android:left="@dimen/uastool_ui_button_padding_full" android:top="@dimen/uastool_ui_button_padding_full" android:right="@dimen/uastool_ui_button_padding_full" android:bottom="@dimen/uastool_ui_button_padding_full"/>
+            <corners android:topLeftRadius="@dimen/uastool_ui_button_radius_full" android:topRightRadius="@dimen/uastool_ui_button_radius_full" android:bottomLeftRadius="@dimen/uastool_ui_button_radius_full" android:bottomRightRadius="@dimen/uastool_ui_button_radius_full"/>
+        </shape>
+    </item>
+</layer-list>

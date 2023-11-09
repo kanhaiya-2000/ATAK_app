@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/activetasks_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/activetasks_title" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/active_tasks" android:singleLine="true"/>
+        <ListView android:id="@+id/activetasks_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:divider="#000000" android:dividerHeight="6px"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/queuetasks_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/queue_tasks"/>
+        <ListView android:id="@+id/queuetasks_list" android:layout_width="match_parent" android:layout_height="match_parent" android:groupIndicator="@null" android:divider="#000000" android:dividerHeight="6px"/>
+    </LinearLayout>
+</LinearLayout>

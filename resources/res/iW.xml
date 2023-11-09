@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/receivedtask_item" android:background="@color/darker_gray" android:paddingTop="2dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10sp" android:paddingEnd="10sp">
+    <include layout="@layout/task_item_layout"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/receivedtask_actions" android:paddingTop="2dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/receivedtask_run_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_run" android:scaleType="fitCenter" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/receivedtask_store_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_save" android:scaleType="fitCenter" android:layout_marginStart="10dp" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/receivedtask_queue_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_queue" android:scaleType="fitCenter" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/receivedtask_view_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_view" android:scaleType="fitCenter" android:layout_marginStart="10dp" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/receivedtask_delete_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_delete" android:scaleType="fitCenter" android:layout_marginStart="10dp" style="@style/darkButton"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/more_labels" android:title="@string/more_menu_labels"/>
+    <item android:id="@+id/more_message_log" android:title="@string/more_menu_message_log"/>
+    <item android:id="@+id/more_flight_log" android:title="@string/more_menu_flight_log"/>
+    <item android:id="@+id/more_pair_controller" android:title="@string/more_menu_pair_controller"/>
+    <item android:id="@+id/more_show_osd" android:title="@string/more_menu_show_osd" android:checkable="true"/>
+    <item android:id="@+id/more_show_ar" android:title="@string/more_menu_show_ar" android:checkable="true"/>
+    <item android:id="@+id/more_ui_show_map" android:title="@string/more_menu_show_map" android:checkable="true"/>
+    <item android:id="@+id/more_ui_show_pip" android:title="@string/more_menu_show_pip" android:checkable="true"/>
+    <item android:id="@+id/more_ui_show_health" android:title="@string/more_menu_show_health" android:checkable="true"/>
+    <item android:id="@+id/more_ui_show_joystick_virtual" android:title="@string/more_menu_show_joystick_virtual" android:checkable="true"/>
+    <item android:id="@+id/more_ui_show_detection" android:title="@string/more_menu_show_detection" android:checkable="true"/>
+    <item android:id="@+id/more_ui_locked" android:title="@string/more_menu_ui_locked" android:checkable="true"/>
+    <item android:id="@+id/more_ui_scale" android:title="@string/more_menu_ui_scale"/>
+    <item android:id="@+id/more_ui_reset" android:title="@string/more_menu_ui_reset"/>
+</menu>

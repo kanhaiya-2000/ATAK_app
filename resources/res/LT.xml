@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="45dp">
+    <Button android:id="@+id/pointedit_button_cancel" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/pointedit_cancel" android:layout_weight="1" style="@style/darkButton"/>
+    <Button android:id="@+id/pointedit_button_save" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/pointedit_save" android:layout_weight="1" style="@style/darkButton"/>
+</LinearLayout>

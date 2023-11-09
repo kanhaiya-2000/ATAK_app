@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Manual Configuration"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/platforms_array" android:title="@string/pref_platform_detect" android:key="uastool.pref_platform_detect" android:summary="@string/pref_platform_detect_sum" android:defaultValue="None Selected" android:entryValues="@array/platforms_array"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="@string/pref_callsign" android:key="uastool.pref_callsign" android:summary="@string/pref_callsign_sum" android:dialogTitle="@string/pref_callsign"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_cot_broadcast" android:key="uastool.pref_cot_broadcast" android:summary="@string/pref_cot_broadcast_sum" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanPreference android:title="Network Preferences" android:key="NETWORK"/>
+    <com.atakmap.android.gui.PanPreference android:title="Camera Preferences" android:key="CAMERA"/>
+    <com.atakmap.android.gui.PanPreference android:title="User Interface Preferences" android:key="UI"/>
+    <com.atakmap.android.gui.PanPreference android:title="Utilities Preferences" android:key="UTILITIES"/>
+    <com.atakmap.android.gui.PanPreference android:title="Controller Preferences" android:key="CONTROLLER"/>
+    <PreferenceCategory android:title="Platform Specific Options"/>
+    <com.atakmap.android.gui.PanPreference android:title="DJI Platform Preferences" android:key="DJI"/>
+    <com.atakmap.android.gui.PanPreference android:title="BH3 Platform Preferences" android:key="BH3"/>
+    <com.atakmap.android.gui.PanPreference android:title="MAVLink Platform Preferences" android:key="MAVLink"/>
+    <com.atakmap.android.gui.PanPreference android:title="AV Platform Preferences" android:key="AV"/>
+    <com.atakmap.android.gui.PanPreference android:title="Indago Platform Preferences" android:key="Indago"/>
+    <com.atakmap.android.gui.PanPreference android:title="Generic Platform Preferences" android:key="Generic"/>
+    <com.atakmap.android.gui.PanPreference android:title="Trillium/Orion Platform Preferences" android:key="Trillium"/>
+    <PreferenceCategory android:title="@string/help_category"/>
+    <Preference android:title="@string/help_title_sum" android:key="show_guide" android:summary="@string/help_description_sum"/>
+    <Preference android:title="@string/help_title_changelog" android:key="show_changelog" android:summary="@string/help_description_changelog"/>
+    <Preference android:title="@string/help_uastool_about" android:selectable="false" android:key="uastool_about" android:summary="@string/help_uastool_about_sum"/>
+</PreferenceScreen>

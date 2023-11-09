@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.tasks.route.OrbitPointEdit xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/uaspoint_edit"/>
+            <include layout="@layout/orbitpoint_edit_radius"/>
+            <include layout="@layout/orbitpoint_edit_speed"/>
+            <include layout="@layout/orbitpoint_edit_count"/>
+            <include layout="@layout/orbitpoint_edit_clockwise"/>
+            <include layout="@layout/orbitpoint_edit_heading"/>
+            <include layout="@layout/orbitpoint_edit_finish"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/uaspoint_buttons"/>
+</com.atakmap.android.uastool.tasks.route.OrbitPointEdit>

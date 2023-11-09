@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="uastool_joystick_buttons_bottom_offset">48dp</dimen>
+    <dimen name="uastool_joystick_buttons_button_height_full">40dp</dimen>
+    <dimen name="uastool_joystick_buttons_button_margin">6dp</dimen>
+    <dimen name="uastool_joystick_buttons_button_width_full">120dp</dimen>
+    <dimen name="uastool_joystick_buttons_left_offset">48dp</dimen>
+    <dimen name="uastool_joystick_buttons_top_offset">40dp</dimen>
+    <dimen name="uastool_joystick_sticks_bottom_offset">48dp</dimen>
+    <dimen name="uastool_joystick_sticks_left_offset">48dp</dimen>
+    <dimen name="uastool_joystick_sticks_limit_radius">80dp</dimen>
+    <dimen name="uastool_joystick_sticks_stick_radius">20dp</dimen>
+    <dimen name="uastool_joystick_sticks_top_offset">48dp</dimen>
+    <dimen name="uastool_ui_button_size_full">50dp</dimen>
+    <dimen name="uastool_ui_button_size_half">34dp</dimen>
+    <dimen name="uastool_ui_health_text">12sp</dimen>
+    <dimen name="uastool_ui_minimap_height">125dp</dimen>
+    <dimen name="uastool_ui_minimap_width">125dp</dimen>
+    <dimen name="uastool_ui_reticle_text">10sp</dimen>
+    <dimen name="uastool_ui_textwidget_text">10sp</dimen>
+    <dimen name="uastool_ui_topbar_battery_text_full">12sp</dimen>
+    <dimen name="uastool_ui_topbar_battery_text_half">10sp</dimen>
+    <dimen name="uastool_ui_topbar_callsign_text">11sp</dimen>
+    <dimen name="uastool_ui_topbar_gimbalheading_text_full">10sp</dimen>
+    <dimen name="uastool_ui_topbar_gimbalheading_text_half">10sp</dimen>
+    <dimen name="uastool_ui_topbar_height_full">40dp</dimen>
+    <dimen name="uastool_ui_topbar_height_half">40dp</dimen>
+    <dimen name="uastool_ui_topbar_telemetry_text">10sp</dimen>
+    <dimen name="uastool_ui_uasheading_size_full">80dp</dimen>
+    <dimen name="uastool_ui_uasheading_size_half">40dp</dimen>
+</resources>

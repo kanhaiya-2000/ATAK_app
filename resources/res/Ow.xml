@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.prefs.ControllerPreference xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@+id/scroller" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/keybinding_table" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/keybinding_table_layout"/>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toEndOf="@+id/scroller">
+        <ImageView android:id="@+id/controller_image" android:layout_width="400dp" android:layout_height="250dp" android:src="@drawable/logitech_controller_white" android:layout_centerInParent="true"/>
+        <Button android:id="@+id/controller_setup_btn" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/controller_setup_str" android:layout_alignBottom="@+id/controller_image" android:layout_centerHorizontal="true" style="@style/darkButton"/>
+    </RelativeLayout>
+</com.atakmap.android.uastool.prefs.ControllerPreference>

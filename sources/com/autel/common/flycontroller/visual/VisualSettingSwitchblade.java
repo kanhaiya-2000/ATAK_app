@@ -1,0 +1,48 @@
+package com.autel.common.flycontroller.visual;
+
+public enum VisualSettingSwitchblade {
+    AVOIDANCE_SYSTEM(1),
+    VIEWPOINT_AVOIDANCE(3),
+    TRACKING_AVOIDANCE(4),
+    RADAR_MAP(5),
+    TRACKING_PULL_BACK(6),
+    LANDING_PROTECT(7),
+    RETURN_TO_HOME_AVOIDANCE(8),
+    VISUAL_LOCATION(9),
+    LANDING_ACCURATELY(10),
+    SET_VIEW_POINT_COORD(11),
+    SET_VIEW_POINT_SPEED(12),
+    VIEW_POINT_FLIGHT_TASK(13),
+    GESTURE_RECOGNITION_MODE(19),
+    VIEW_POINT_FLIGHT_MODE(21),
+    FORCE_LANDING(23),
+    TRACKING_AIRCRAFT_ROTATE(24),
+    VISUAL_TRACKING_MODE(15),
+    VISUAL_SET_RESOLUTION_ANGLE(25),
+    VISUAL_SOA(32),
+    VISUAL_PAUSE_TASK(26),
+    VISUAL_TRACKING(27),
+    VISUAL_TRACKING_AREA(28),
+    VISUAL_BOTTOM_LED(29),
+    VISUAL_ADJUST_HEIGHT(33),
+    VISUAL_ADJUST_ZOOM(34),
+    VISUAL_CONTROLLER_ROTATE(35),
+    VISUAL_ORBIT_MODEL(36),
+    VISUAL_ORBIT_MODEL_TARGET(37),
+    VISUAL_ORBIT_MODEL_HEIGHT_RADIUS(38),
+    VISUAL_ORBIT_MODEL_RESET_YAW(39),
+    VISUAL_DIGITAL_ZOOM(40),
+    VISUAL_ADJUST_SPEED(41),
+    UNKNOWN(-1);
+    
+    private int cmdValue;
+
+    private VisualSettingSwitchblade(int i) {
+        this.cmdValue = -1;
+        this.cmdValue = i;
+    }
+
+    public int getCmdValue() {
+        return this.cmdValue;
+    }
+}

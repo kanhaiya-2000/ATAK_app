@@ -1,0 +1,43 @@
+<menu buttonRadius='65' buttonSpan='40' buttonWidth='90' buttonBg='bgs/button.xml'>
+
+    <button angle='-90'
+        icon='icons/delete.png'
+        onClick='actions/remove.xml'
+        disabled='!{${removable}}' />
+
+    <button icon='icons/details.png'
+        onClick='actions/showdetails.xml' />
+
+    <button icon='icons/breadcrumbs.xml'
+        selectable='true'
+        onClick='actions/toggle_crumb.xml'
+        selected='${tracks_on}'/>
+
+    <button icon='icons/video.png'
+        disableSwap='true'
+        disableIconSwap='true'
+        onClick="actions/video.xml"
+        disabled="!{${videoUrl}}" />
+
+    <!--<button icon='icons/sublist.png'-->
+    <button icon='icons/show_uastool_light.png'
+        onClick='actions/showuavlist.xml' />
+
+    <button icon='icons/camlock.xml'
+        selectable='true'
+        onClick='actions/lockcam.xml'
+        selected='${camLocked}' />
+
+    <button icon='icons/pairing_line.png'
+        onClick='actions/pairingline.xml'
+        selected='${pairingline_on}' />
+
+    <button icon='icons/details_progress.png'
+        onClick='actions/selectoverlay.xml' />
+
+    <button icon='icons/routes.png'
+        onClick='actions/toggleroute.xml'
+        selected='${cRouteVisible}' />
+
+</menu>
+

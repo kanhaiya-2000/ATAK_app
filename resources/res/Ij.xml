@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.utils.SurveyScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/survey_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/survey_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Survey Route"/>
+    <ScrollView android:id="@+id/survey_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:layout_marginHorizontal="5dp" android:layout_marginVertical="5dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Camera Properties"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Sensor Width (mm)"/>
+                    <EditText android:id="@+id/sensorWidth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Sensor Height (mm)"/>
+                    <EditText android:id="@+id/sensorHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Focal Length (mm)"/>
+                    <EditText android:id="@+id/focalLength" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Resolution (MP)"/>
+                    <EditText android:id="@+id/sensorResolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+                </LinearLayout>
+                <Button android:id="@+id/survey_save_camera_preset_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Custom Preset" style="@style/darkButton"/>
+                <com.atakmap.android.gui.PluginSpinner android:id="@+id/survey_camera_spinner" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginVertical="5dp" style="@style/darkButton"/>
+                <Button android:id="@+id/survey_load_camera_preset_btn" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load Preset" style="@style/darkButton"/>
+            </LinearLayout>
+            <include layout="@layout/uaspoint_edit_gimbal_pitch"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Task Altitude (ft AGL)"/>
+                <EditText android:id="@+id/altitude" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Coverage Angle (degrees)"/>
+                <EditText android:id="@+id/coverage_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Overlap (0-100%)"/>
+                <EditText android:id="@+id/overlap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Sidelap (0-100%)"/>
+                <EditText android:id="@+id/sidelap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Imagery Interval (seconds)"/>
+                <EditText android:id="@+id/imagery_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <Button android:id="@+id/createShape" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw Shape for Survey" style="@style/darkButton"/>
+            <Button android:id="@+id/sendArea" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load available shapes" style="@style/darkButton"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Shapes"/>
+                <com.atakmap.android.gui.PluginSpinner android:id="@+id/survey_shapes_list" android:layout_width="201dp" android:layout_height="40dp" android:spinnerMode="dropdown" style="@style/darkSpinner"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:enabled="false" android:id="@+id/create_survey_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create Task" style="@style/darkButton"/>
+                <Button android:id="@+id/survey_cancel_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Cancel" style="@style/darkButton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.atakmap.android.uastool.utils.SurveyScreen>

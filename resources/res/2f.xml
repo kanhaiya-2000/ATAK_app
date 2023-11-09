@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.tasks.route.edit.GimbalPitchEdit xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/pointedit_gimbal_pitch_layout" android:paddingTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/gimbal_pitch_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignBaseline="@+id/gimbal_pitch_label"/>
+    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:id="@+id/gimbal_pitch_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Gimbal Pitch (deg)" android:layout_toEndOf="@+id/gimbal_pitch_enable"/>
+    <EditText android:id="@+id/gimbal_pitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/gimbal_pitch_label" android:inputType="number" android:layout_toEndOf="@+id/gimbal_pitch_label"/>
+    <TextView android:textSize="14sp" android:textStyle="normal|bold|italic" android:textColor="@color/white" android:id="@+id/gimbal_pitch_bounds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="(0-90)" android:layout_toEndOf="@+id/gimbal_pitch"/>
+</com.atakmap.android.uastool.tasks.route.edit.GimbalPitchEdit>

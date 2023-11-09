@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="@color/joystick_ui_buttons_background"/>
+    <stroke android:width="@dimen/uastool_ui_button_stroke_full" android:color="@color/video_ui_disabled"/>
+    <padding android:left="@dimen/uastool_ui_button_padding_full" android:top="@dimen/uastool_ui_button_padding_full" android:right="@dimen/uastool_ui_button_padding_full" android:bottom="@dimen/uastool_ui_button_padding_full"/>
+    <corners android:topLeftRadius="@dimen/uastool_ui_button_radius_full" android:topRightRadius="@dimen/uastool_ui_button_radius_full" android:bottomLeftRadius="@dimen/uastool_ui_button_radius_full" android:bottomRightRadius="@dimen/uastool_ui_button_radius_full"/>
+</shape>

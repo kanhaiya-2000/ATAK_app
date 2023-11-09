@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.tasks.route.edit.NameEdit xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/pointedit_name_layout" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/pointedit_select_name" android:background="@color/darker_gray" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="6dp">
+        <CheckBox android:id="@+id/pointedit_select_name_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp"/>
+    </RelativeLayout>
+    <Button android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/pointedit_name" android:layout_width="wrap_content" android:layout_height="32dp" android:text="@string/pointedit_name" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:paddingStart="6dp" android:paddingEnd="6dp" style="@style/darkButton"/>
+</com.atakmap.android.uastool.tasks.route.edit.NameEdit>

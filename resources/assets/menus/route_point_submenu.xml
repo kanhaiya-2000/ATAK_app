@@ -1,0 +1,17 @@
+<menu buttonRadius='65' buttonSpan='32.73' buttonWidth='60' buttonBg='bgs/button.xml'>
+
+
+    <button icon='icons/orbitpoint.png'
+        onClick='actions/insert_waypoint.xml' />
+
+    <button icon='icons/waypoint.png'
+        onClick='actions/insert_waypoint.xml' />
+
+    <button icon='icons/vertex.png' onClick='actions/insert_vertex.xml' />
+
+</menu>
+
+
+
+
+

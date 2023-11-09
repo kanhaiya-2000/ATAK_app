@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <LinearLayout android:orientation="vertical" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/toastlog_message_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:ellipsize="end" android:id="@+id/toastlog_date_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:minLines="1" android:paddingStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

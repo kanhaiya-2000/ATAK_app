@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alpha_dark_gray">#50262626</color>
+    <color name="alpha_gray">#50dcdcdc</color>
+    <color name="black">#000000</color>
+    <color name="blackALPHA">#aa000000</color>
+    <color name="darker_gray">#262626</color>
+    <color name="heading_yellow">#dfb228</color>
+    <color name="joystick_ui_buttons_background">#88ffffff</color>
+    <color name="joystick_ui_levels_off">#11ffffff</color>
+    <color name="joystick_ui_levels_on">#88ffffff</color>
+    <color name="joystick_ui_levels_on_max">#88ffffff</color>
+    <color name="joystick_ui_levels_outline">#22ffffff</color>
+    <color name="lightBlue">#009ada</color>
+    <color name="lightBlueALPHA">#aa009ada</color>
+    <color name="lightGrey">#9eb0b7</color>
+    <color name="transparent">#00000000</color>
+    <color name="video_ui_buttonshadow_color">#66000000</color>
+    <color name="video_ui_danger">#ffff0000</color>
+    <color name="video_ui_disabled">#aa686868</color>
+    <color name="video_ui_enabled_full">#ffffffff</color>
+    <color name="video_ui_enabled_half">#88ffffff</color>
+    <color name="video_ui_on">#ff00ff00</color>
+    <color name="video_ui_pending">#ffffff00</color>
+    <color name="video_ui_pressed">#ff00ff00</color>
+    <color name="video_ui_text_color">#ffffffff</color>
+    <color name="video_ui_textshadow_color">#aa000000</color>
+    <color name="video_ui_transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Route Defaults" android:key="Route"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Altitude" android:key="uastool.route.pref_altitude" android:summary="@string/pref_route_altitude_sum" android:inputType="number"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Speed" android:key="uastool.route.pref_speed" android:summary="@string/pref_route_speed_sum" android:inputType="number"/>
+    <CheckBoxPreference android:title="Auto Takeoff" android:key="uastool.route.pref_autotakeoff" android:summary="@string/pref_route_autotakeoff_sum" android:defaultValue="true"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Orbit Speed" android:key="uastool.route.pref_orbitpoint_speed" android:summary="@string/pref_route_orbitpoint_speed_sum" android:inputType="number"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Orbit Radius" android:key="uastool.route.pref_orbitpoint_radius" android:summary="@string/pref_route_orbitpoint_radius_sum" android:inputType="number"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Orbit Heading" android:key="uastool.route.pref_orbitpoint_heading" android:summary="@string/pref_route_orbitpoint_heading_sum"/>
+    <CheckBoxPreference android:title="Orbit Clockwise" android:key="uastool.route.pref_orbitpoint_clockwise" android:summary="@string/pref_route_orbitpoint_clockwise_sum" android:defaultValue="false"/>
+    <CheckBoxPreference android:title="Orbit Look at Point" android:key="uastool.route.pref_orbitpoint_look_at" android:summary="@string/pref_route_orbitpoint_look_at_sum" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Waypoint Heading" android:key="uastool.route.pref_waypoint_heading" android:summary="@string/pref_route_waypoint_heading_sum"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Waypoint Flight Mode" android:key="uastool.route.pref_waypoint_flightmode" android:summary="@string/pref_route_waypoint_flightmode_sum"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Waypoint Finish Action" android:key="uastool.route.pref_waypoint_finishaction" android:summary="@string/pref_route_waypoint_finishaction_sum"/>
+</PreferenceScreen>

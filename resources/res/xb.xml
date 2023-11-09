@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Trillium/Orion Settings" android:key="Trillium"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Video Source Network Adapter" android:key="uastool.trillium.pref_src_adapter" android:summary="@string/pref_src_adapter_sum"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Trillium Platform IP" android:key="uastool.trillium.pref_platform_ip" android:summary="@string/trillium_pref_platform_ip"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Trillium Platform Port" android:key="uastool.trillium.pref_platform_port" android:summary="@string/trillium_pref_platform_port"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Trillium Video buffering ms (-1 disabled)" android:key="uastool.trillium.pref_video_buffering" android:summary="@string/trillium_pref_video_buffering"/>
+    <com.atakmap.android.gui.PanListPreference android:singleLine="true" android:title="Video spi and corners source" android:key="uastool.trillium.pref_video_corners_source" android:summary="@string/trillium_pref_corners_source"/>
+</PreferenceScreen>

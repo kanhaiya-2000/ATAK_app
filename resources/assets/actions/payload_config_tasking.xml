@@ -1,0 +1,15 @@
+<set>
+    <broadcast>
+        <action>com.atakmap.android.uastool.PAYLOAD_CONFIG_TASKING</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.UNFOCUS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_DETAILS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_MENU</action>
+    </broadcast>
+</set>
+

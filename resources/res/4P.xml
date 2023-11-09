@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/avahi_item_summary" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/avahi_item_icon" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/overlay_not_visible"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@+id/avahi_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="name" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textStyle="italic" android:ellipsize="marquee" android:id="@+id/avahi_item_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="description" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/avahi_configure" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/import_config"/>
+    </LinearLayout>
+</LinearLayout>

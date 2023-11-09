@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.flightlog.FlightLogScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/flightlog_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@+id/flightlog_refresh" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="4dp" android:src="@drawable/action_refresh_white" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/darkButton"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/flightlog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_log" android:singleLine="true" android:layout_alignBaseline="@+id/flightlog_refresh" android:layout_alignTop="@+id/flightlog_refresh" android:layout_alignBottom="@+id/flightlog_refresh" android:layout_alignParentTop="true"/>
+        <ImageButton android:id="@+id/flightlog_delete_all" android:padding="6dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/action_delete" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/darkButton"/>
+        <ListView android:id="@+id/flightlog_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#000000" android:dividerHeight="6px" android:layout_weight="1" android:layout_below="@+id/flightlog_refresh"/>
+    </RelativeLayout>
+</com.atakmap.android.uastool.flightlog.FlightLogScreen>

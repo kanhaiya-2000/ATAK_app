@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.pagers.video_ui.default_ui.GimbalPitchWidget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/gimbal_pitch_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_ui_gimbal_pitch" android:scaleType="fitCenter"/>
+</com.atakmap.android.uastool.pagers.video_ui.default_ui.GimbalPitchWidget>

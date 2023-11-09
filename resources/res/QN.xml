@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.pagers.video_ui.default_ui.MapWidget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/video_ui_widget_background" android:paddingTop="@dimen/uastool_ui_vertbar_pad_top" android:paddingBottom="@dimen/uastool_ui_vertbar_pad_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/uastool_ui_vertbar_pad_start" android:paddingEnd="@dimen/uastool_ui_vertbar_pad_start">
+    <RelativeLayout android:id="@+id/bitmap_layout" android:background="@drawable/layout_border" android:layout_width="@dimen/uastool_ui_minimap_width" android:layout_height="@dimen/uastool_ui_minimap_height">
+        <ImageView android:id="@+id/bitmap_view" android:layout_width="@dimen/uastool_ui_minimap_width" android:layout_height="@dimen/uastool_ui_minimap_height"/>
+    </RelativeLayout>
+</com.atakmap.android.uastool.pagers.video_ui.default_ui.MapWidget>

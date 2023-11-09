@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/operator_main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/failed" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/video_try_connect" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_connect" android:layout_centerInParent="true" android:paddingStart="10dp" android:paddingEnd="10dp" style="@style/darkButton"/>
+            <TextView android:textAppearance="@style/video_ui_text_style" android:id="@+id/failed_text" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lost_connection" android:layout_below="@+id/video_try_connect" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/connecting" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/connection_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge"/>
+            <TextView android:textAppearance="@style/video_ui_text_style" android:textSize="@dimen/draper_title_font" android:gravity="center_horizontal" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/connecting" android:layout_below="@+id/connection_progress" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/fmv_component" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.atakmap.android.uastool.pagers.operator.PreviewTextureView android:id="@+id/operator_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <com.atakmap.android.uastool.tflite.customview.OverlayView android:id="@+id/tracking_overlay" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="0dp" android:layout_alignTop="@+id/operator_preview" android:layout_alignBottom="@+id/operator_preview" android:layout_alignStart="@+id/operator_preview" android:layout_alignEnd="@+id/operator_preview"/>
+            <com.atakmap.android.uastool.pagers.video_ui.ArOverlayView android:id="@+id/ar_overlay_view" android:layout_width="0dp" android:layout_height="0dp" android:layout_alignTop="@+id/operator_preview" android:layout_alignBottom="@+id/operator_preview" android:layout_alignStart="@+id/operator_preview" android:layout_alignEnd="@+id/operator_preview"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/video_disconnect_overlay" android:background="@color/alpha_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/ui_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/joystick_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

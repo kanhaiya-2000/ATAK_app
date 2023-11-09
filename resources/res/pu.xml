@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.overlays.OverlayScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/overlay_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/overlay_title_text" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/overlays" android:singleLine="true"/>
+    <ListView android:id="@+id/overlay_listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="10"/>
+</com.atakmap.android.uastool.overlays.OverlayScreen>

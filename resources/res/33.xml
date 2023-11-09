@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/config_AV_PUMA" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Source Adapter"/>
+    <com.atakmap.android.gui.PluginSpinner android:id="@+id/av_video_source_adapter" android:layout_width="match_parent" android:layout_height="40dp" style="@style/darkButton"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<set>
+    <broadcast>
+        <action>com.atakmap.android.uastool.REJECT_UAS_TASK_POINT</action>
+        <extras>
+            <string key='uid'>${uid}</string>
+            <string key='toUid'>${toUid}</string>
+            <string key='listItemId'>${listItemId}</string>
+        </extras>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.UNFOCUS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_DETAILS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_MENU</action>
+    </broadcast>
+</set>
+

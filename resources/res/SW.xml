@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="MAVLink Settings" android:key="MAVLink"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Video Source Network Adapter" android:key="uastool.mavlink.pref_src_adapter" android:summary="@string/pref_src_adapter_sum"/>
+    <com.atakmap.android.gui.PanListPreference android:title="MAVLink Network Protocol" android:key="uastool.mavlink.pref_network_type" android:summary="@string/mavlink_pref_network_type"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="MAVLink Platform IP" android:key="uastool.mavlink.pref_platform_ip" android:summary="@string/pref_platform_ip"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="MAVLink Platform Port" android:key="uastool.mavlink.pref_platform_port" android:summary="@string/pref_platform_port" android:inputType="number"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Video Source URI" android:key="uastool.mavlink.pref_src_uri" android:summary="@string/pref_src_ip_sum"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Video Source URI #2" android:key="uastool.mavlink.pref_src_uri2" android:summary="@string/pref_src_ip_sum"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Mavlink Dialect" android:key="uastool.mavlink.pref_dialect" android:summary="@string/mav_force_dialect"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="Joystick Input Decay" android:key="uastool.mavlink.pref_joystick_decay" android:summary="Automatically joysticks to center after input stops" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="Joystick Input Enabled" android:key="uastool.mavlink.pref_joystick_enable" android:summary="Enable or Disable Manual Control commands though UASTool" android:defaultValue="true"/>
+</PreferenceScreen>

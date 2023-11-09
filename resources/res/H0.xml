@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.trillium.TrilliumSettingsScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/trilliumsettings_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/trilliumsettings_title_text" android:paddingTop="6dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mavlink_platform_settings"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageButton android:gravity="end" android:id="@+id/trilliumsettings_refresh_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_refresh" android:contentDescription="TODO"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/general_text" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/trilliumsettings_videodestination_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videodestination_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video Destination" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videodestination_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/trilliumsettings_videodestination_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/trilliumsettings_videodestination_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/trilliumsettings_videodestination_port_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videodestination_port_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cruise_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videodestination_port_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/trilliumsettings_videodestination_port_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/trilliumsettings_videodestination_port_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/trilliumsettings_videoformat_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videoformat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trillium_pref_video_protocol" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/trilliumsettings_videoformat_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/trilliumsettings_videoformat_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.atakmap.android.uastool.trillium.TrilliumSettingsScreen>

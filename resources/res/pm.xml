@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="AV Settings" android:key="AV"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Video Source Network Adapter" android:key="uastool.av.pref_src_adapter" android:summary="@string/pref_src_adapter_sum"/>
+</PreferenceScreen>

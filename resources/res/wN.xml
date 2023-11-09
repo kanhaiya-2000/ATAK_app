@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/pip_video_container" android:layout_width="212dp" android:layout_height="120dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/pip_video_screen" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@+id/pip_video_configure" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/action_settings" android:scaleType="fitCenter" android:tint="@color/white" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/transButton"/>
+        <ImageButton android:id="@+id/pip_video_dismiss" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/action_close" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/transButton"/>
+        <RelativeLayout android:id="@+id/pip_failed" android:background="@color/alpha_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:id="@+id/pip_video_try_connect" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/try_connect" android:layout_centerInParent="true" android:paddingStart="10dp" android:paddingEnd="10dp" style="@style/darkButton"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#ffffffff" android:id="@+id/pip_failed_text" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lost_connection" android:shadowColor="#aa000000" android:shadowDx="4" android:shadowDy="4" android:shadowRadius="5" android:layout_below="@+id/pip_video_try_connect" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/pip_connecting" android:background="@color/alpha_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/pip_connection_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleLarge"/>
+            <TextView android:textSize="@dimen/draper_title_font" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@+id/pip_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/connecting" android:shadowColor="#aa000000" android:shadowDx="4" android:shadowDy="4" android:shadowRadius="5" android:layout_below="@+id/pip_connection_progress" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.dji.DJIRCPairScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/djircpair_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="0dp" android:paddingEnd="2dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/djircpair_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_rcpair_title" android:layout_alignParentTop="true"/>
+        <ImageView android:id="@+id/djircpair_image" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/dji_rcpair" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="center" android:id="@+id/djircpair_help_text" android:background="@drawable/video_ui_widget_background" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/djircpair_button"/>
+        <Button android:textSize="18sp" android:textColor="@color/white" android:id="@+id/djircpair_button" android:background="@color/lightBlue" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.atakmap.android.uastool.dji.DJIRCPairScreen>

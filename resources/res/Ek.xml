@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.pagers.video_ui.default_ui.PipVideoWidget2 xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/video_ui_widget_background" android:paddingTop="@dimen/uastool_ui_vertbar_pad_top" android:paddingBottom="@dimen/uastool_ui_vertbar_pad_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/uastool_ui_vertbar_pad_start" android:paddingEnd="@dimen/uastool_ui_vertbar_pad_start">
+    <include layout="@layout/video_ui_pip_videowidget_base"/>
+</com.atakmap.android.uastool.pagers.video_ui.default_ui.PipVideoWidget2>

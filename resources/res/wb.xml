@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/dji_rcstick_mode_layout" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/dji_rcstick_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mode Name" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/dji_rcstick_mode_image" android:layout_width="0dp" android:layout_height="60dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:src="@drawable/dji_rc_mode02" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/dji_rcstick_mode_select" android:layout_toEndOf="@+id/dji_rcstick_mode_title" android:layout_alignParentEnd="false"/>
+    <RadioButton android:id="@+id/dji_rcstick_mode_select" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

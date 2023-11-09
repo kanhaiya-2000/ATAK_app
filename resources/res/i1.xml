@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="DJI Button Customization" android:key="DJIButtons"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="C1 Button Action" android:key="uastool.djibuttons.saved_c1"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="C2 Button Action" android:key="uastool.djibuttons.saved_c2"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="5D Up Button Action" android:key="uastool.djibuttons.saved_fiveDUp"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="5D Down Button Action" android:key="uastool.djibuttons.saved_fiveDDown"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="5D Left Button Action" android:key="uastool.djibuttons.saved_fiveDLeft"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="5D Right Button Action" android:key="uastool.djibuttons.saved_fiveDRight"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="5D In Button Action" android:key="uastool.djibuttons.saved_fiveDIn"/>
+</PreferenceScreen>

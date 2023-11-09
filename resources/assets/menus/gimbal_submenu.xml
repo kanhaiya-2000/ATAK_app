@@ -1,0 +1,13 @@
+<menu buttonRadius='65' buttonSpan='32.73' buttonWidth='60' buttonBg='bgs/button.xml'>
+
+    <button icon='icons/camera.png'
+        onClick='actions/gimbal_picture_tasking.xml' />
+
+    <button icon='icons/eye.png'
+        onClick='actions/gimbal_look_tasking.xml' />
+
+    <button icon='icons/edit2.png'
+        onClick='actions/payload_config_tasking.xml' />
+
+</menu>
+

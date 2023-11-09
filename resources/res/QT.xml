@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="BH3 Settings" android:key="BH3"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Video Source Network Adapter" android:key="uastool.pd100.pref_src_adapter" android:summary="@string/pref_src_adapter_sum"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Video Source IP Address" android:key="uastool.pd100.pref_src_ip" android:summary="@string/pref_src_ip_sum"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Video Source Port" android:key="uastool.pd100.pref_src_port" android:summary="@string/pref_src_port_sum" android:inputType="number"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="BH3 Incoming CoT UDP Port" android:key="uastool.pd100.pref_pd100_cot_udp_port" android:summary="@string/pref_pd100_cot_udp_port_sum" android:inputType="number"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="BH3 Incoming CoT TCP Port" android:key="uastool.pd100.pref_pd100_cot_tcp_port" android:summary="@string/pref_pd100_cot_tcp_port_sum" android:inputType="number"/>
+</PreferenceScreen>

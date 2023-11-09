@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Indago Settings" android:key="Indago"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Indago VCT IP" android:key="uastool.indago.pref_indago_vct_ip" android:summary="@string/pref_indago_vct_ip" android:defaultValue="10.1.0.4"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Indago VCT Port" android:key="uastool.indago.pref_indago_vct_port" android:summary="@string/pref_indago_vct_port" android:defaultValue="9339" android:inputType="number"/>
+    <com.atakmap.android.gui.PanListPreference android:title="Video Source Network Adapter" android:key="uastool.indago.pref_src_adapter" android:summary="@string/pref_src_adapter_sum"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:singleLine="true" android:title="Video Source IP Address" android:key="uastool.indago.pref_src_ip" android:summary="@string/pref_src_ip_sum" android:defaultValue="224.100.10.10"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:numeric="integer" android:title="Video Source Port" android:key="uastool.indago.pref_src_port" android:summary="@string/pref_src_port_sum" android:defaultValue="3001" android:inputType="number"/>
+</PreferenceScreen>

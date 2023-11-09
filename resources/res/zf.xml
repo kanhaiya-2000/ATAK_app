@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/config_indago" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VCT IP"/>
+    <EditText android:id="@+id/indago_vct_ip" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="VCT PORT"/>
+    <EditText android:id="@+id/indago_vct_port" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video Source Adapter"/>
+    <com.atakmap.android.gui.PluginSpinner android:id="@+id/indago_video_source_adapter" android:layout_width="match_parent" android:layout_height="40dp" style="@style/darkButton"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video IP"/>
+    <EditText android:id="@+id/indago_video_ip" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Video PORT"/>
+    <EditText android:id="@+id/indago_video_port" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

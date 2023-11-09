@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableRow android:id="@+id/a_button_row" android:tag="96" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/a_button_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/a_button" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/a_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/b_button_row" android:tag="97" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/b_button_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/b_button" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/b_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/x_button_row" android:tag="99" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/x_button_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/x_button" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/x_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/y_button_row" android:tag="100" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/y_button_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/y_button" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/y_spinner" android:layout_width="300dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/dpad_up_row" android:tag="19" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/dpad_up_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/dpad_up" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/dpad_up_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/dpad_down_row" android:tag="20" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/dpad_down_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/dpad_down" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/dpad_down_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/dpad_right_row" android:tag="22" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/dpad_right_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/dpad_right" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/dpad_right_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/dpad_left_row" android:tag="21" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/dpad_left_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/dpad_left" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/dpad_left_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/right_trigger_row" android:tag="105" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/right_trigger_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/right_trigger" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/right_trigger_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/left_trigger_row" android:tag="104" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/left_trigger_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/left_trigger" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/left_trigger_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/right_bumper_row" android:tag="103" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/right_bumper_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/right_bumper" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/right_bumper_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/left_bumper_row" android:tag="102" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/left_bumper_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/left_bumper" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/left_bumper_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/right_analog_click_row" android:tag="107" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/right_analog_click_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/right_analog_click" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/right_analog_click_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/left_analog_click_row" android:tag="106" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/left_analog_click_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/left_analog_click" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/left_analog_click_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/start_row" android:tag="108" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/start_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/start" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/start_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/select_row" android:tag="109" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="24sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/select_text_box" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/select" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/select_spinner" android:layout_width="200dp" android:layout_height="match_parent" android:spinnerMode="dropdown" style="@style/darkSpinnerTablet"/>
+    </TableRow>
+    <TableRow android:id="@+id/select_pause" android:tag="98" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/pause_text_box" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pause" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/pause_spinner" android:layout_width="200dp" android:layout_height="40dp" android:spinnerMode="dropdown" style="@style/darkSpinner"/>
+    </TableRow>
+    <TableRow android:id="@+id/home_row" android:tag="101" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/home_text_box" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/home" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+        <com.atakmap.android.gui.PluginSpinner android:id="@+id/home_spinner" android:layout_width="200dp" android:layout_height="40dp" android:spinnerMode="dropdown" style="@style/darkSpinner"/>
+    </TableRow>
+</TableLayout>

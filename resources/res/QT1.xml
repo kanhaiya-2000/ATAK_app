@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Camera Preferences" android:key="CAMERA"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/fov_options" android:title="@string/pref_camera_fov_mode" android:key="uastool.pref_fov_override_mode" android:summary="@string/pref_camera_fov_mode_sum" android:defaultValue="Disabled" android:entryValues="@array/fov_options"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="@string/pref_camera_fov_horiz" android:key="uastool.pref_fov_override_horizontal" android:summary="@string/pref_camera_fov_horiz_sum" android:dialogTitle="@string/pref_camera_fov_horiz" android:inputType="numberDecimal"/>
+    <com.atakmap.android.gui.PanEditTextPreference android:title="@string/pref_camera_fov_vert" android:key="uastool.pref_fov_override_vertical" android:summary="@string/pref_camera_fov_vert_sum" android:dialogTitle="@string/pref_camera_fov_vert" android:inputType="numberDecimal"/>
+    <com.atakmap.android.gui.PanListPreference android:entries="@array/mapshot_save_options" android:title="@string/pref_camera_mapshot_save_sum" android:key="uastool.pref_mapshot_save_mode" android:summary="@string/pref_camera_mapshot_save_mode" android:entryValues="@array/mapshot_save_values"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_objectdetection_mapshot" android:key="uastool.pref_objectdetection_mapshot" android:summary="@string/pref_objectdetection_mapshot_sum" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanCheckBoxPreference android:title="@string/pref_objectdetection_vibrate" android:key="uastool.pref_objectdetection_vibrate" android:summary="@string/pref_objectdetection_vibrate_sum" android:defaultValue="false"/>
+    <com.atakmap.android.gui.PanPreference android:title="@string/pref_max_open_mapshots" android:key="uastool.pref_max_open_mapshots" android:summary="@string/pref_max_open_mapshots_sum"/>
+</PreferenceScreen>

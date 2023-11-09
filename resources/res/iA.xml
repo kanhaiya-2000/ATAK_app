@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/flightlog_item" android:padding="10sp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/flightlog_summary" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/flightlog_item_icon" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/toast_log_white"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/flightlog_item_name" android:layout_width="match_parent" android:layout_height="match_parent" android:text="name" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/flightlog_item_expand" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/item_closed"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/flightlog_actions" android:background="@color/darker_gray" android:paddingTop="2dp" android:paddingBottom="1dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/flightlog_view_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_view" android:scaleType="fitCenter" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/flightlog_send_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_send" android:scaleType="fitCenter" style="@style/darkButton"/>
+        <ImageButton android:id="@+id/flightlog_delete_button" android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_delete" android:scaleType="fitCenter" style="@style/darkButton"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/flightlog_view" android:background="@color/darker_gray" android:paddingTop="1dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center" android:id="@+id/flightlog_view_prev" android:padding="6dp" android:clickable="false" android:layout_width="55dp" android:layout_height="match_parent" android:src="@drawable/arrow_left" android:scaleType="fitCenter" style="@style/darkButton"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/flightlog_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/flightlog_data_titles" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6dp">
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="date:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_loc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="location:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_alt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="altitude:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_spd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="speed:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="heading:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_mess" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="message:"/>
+                    <TextView android:textSize="10sp" android:id="@+id/flightlog_data_titles_comm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="command:"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/flightlog_data_values" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6dp" android:paddingEnd="6dp">
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_loc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_alt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_spd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_mess" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/flightlog_data_values_comm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="center" android:id="@+id/flightlog_view_next" android:padding="6dp" android:layout_width="55dp" android:layout_height="match_parent" android:src="@drawable/arrow_right" android:scaleType="fitCenter" style="@style/darkButton"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/flightlog_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/darkButton"/>
+    </LinearLayout>
+</LinearLayout>

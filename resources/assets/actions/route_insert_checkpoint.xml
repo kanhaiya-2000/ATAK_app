@@ -1,0 +1,13 @@
+<set>
+    <broadcast>
+        <action>com.atakmap.android.uastool.ROUTE_INSERT_CHECKPOINT</action>
+        <extras>
+            <string key='uid'>${uid}</string>
+            <string key='point'>${last_touch}</string>
+        </extras>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_MENU</action>
+    </broadcast>
+</set>
+

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="battery_level_units">
+        <item>Percentage</item>
+        <item>Voltage</item>
+    </array>
+    <array name="default_keybindings">
+        <item>A : PITCH DOWN</item>
+        <item>B : EMERGENCY STOP</item>
+        <item>X : ARM/DISARM</item>
+        <item>Y : PITCH UP</item>
+        <item>DPad Up : TAKEOFF</item>
+        <item>DPad Down : LAND</item>
+        <item>DPad Right : RTL</item>
+        <item>DPad Left : NO ACTION</item>
+        <item>RT : TOGGLE VIDEO</item>
+        <item>LT : MAPSHOT</item>
+        <item>RB : NO ACTION</item>
+        <item>LB : NO ACTION</item>
+        <item>R3 : NO ACTION</item>
+        <item>L3 : NO ACTION</item>
+        <item>Start : NO ACTION</item>
+        <item>Select : NO ACTION</item>
+    </array>
+    <array name="dji_5dbutton_actions">
+        <item>None</item>
+        <item>Gimbal Snap</item>
+        <item>Gimbal Pitch Up</item>
+        <item>Gimbal Pitch Down</item>
+        <item>Zoom In</item>
+        <item>Zoom Out</item>
+        <item>Toggle Cameras</item>
+        <item>Toggle Light</item>
+        <item>Camera Shot</item>
+        <item>Map Shot</item>
+        <item>Toggle Screen</item>
+        <item>Toggle Broadcast</item>
+    </array>
+    <array name="dji_cbutton_actions">
+        <item>None</item>
+        <item>Gimbal Snap</item>
+        <item>Gimbal Pitch Up</item>
+        <item>Gimbal Pitch Down</item>
+        <item>Zoom In</item>
+        <item>Zoom Out</item>
+        <item>Toggle Cameras</item>
+        <item>Toggle Light</item>
+        <item>Play Sound</item>
+        <item>Stop Sound</item>
+        <item>Camera Shot</item>
+        <item>Map Shot</item>
+        <item>Toggle Screen</item>
+        <item>Toggle Broadcast</item>
+        <item>Trigger 1</item>
+        <item>Trigger 2</item>
+    </array>
+    <array name="dji_speaker_repeat_modes">
+        <item>Play Once</item>
+        <item>Repeat Continuously</item>
+    </array>
+    <array name="dji_thermal_gain_modes">
+        <item>Auto</item>
+        <item>Low</item>
+        <item>High</item>
+    </array>
+    <array name="dji_thermal_palette_modes">
+        <item>Rainbow2</item>
+        <item>Hot Spot</item>
+        <item>Gray</item>
+        <item>Hot Metal</item>
+        <item>Cold Spot</item>
+    </array>
+    <array name="dji_thermal_roi_modes">
+        <item>Full</item>
+        <item>Sky Excluded 33%</item>
+        <item>Sky Excluded 50%</item>
+    </array>
+    <array name="dji_thermal_scene_modes">
+        <item>Default</item>
+        <item>Linear</item>
+        <item>Sea Sky</item>
+        <item>Outdoor</item>
+        <item>Indoor</item>
+    </array>
+    <array name="dji_thermal_temps_presets">
+        <item>None</item>
+        <item>Fire</item>
+        <item>People</item>
+    </array>
+    <array name="dji_thermal_units">
+        <item>Fahrenheit</item>
+        <item>Celsius</item>
+    </array>
+    <array name="djisettings_connloss_behavior">
+        <item>Return to Home</item>
+        <item>Hover</item>
+        <item>Land</item>
+    </array>
+    <array name="fov_options">
+        <item>Disabled</item>
+        <item>69x42 Wide</item>
+        <item>64x38 Medium</item>
+        <item>59x34 Narrow</item>
+        <item>Custom</item>
+    </array>
+    <array name="function_array">
+        <item>NO ACTION</item>
+        <item>ARM/DISARM</item>
+        <item>MAPSHOT</item>
+        <item>PITCH UP</item>
+        <item>PITCH DOWN</item>
+        <item>EMERGENCY STOP</item>
+        <item>TAKEOFF</item>
+        <item>LAND</item>
+        <item>RTL</item>
+        <item>TOGGLE ROUTE</item>
+        <item>TOGGLE VIDEO</item>
+        <item>ZOOM IN</item>
+        <item>ZOOM OUT</item>
+        <item>POSCTL</item>
+        <item>STABILIZED</item>
+        <item>ALTCTL</item>
+    </array>
+    <array name="joystick_virtual_types">
+        <item>Buttons</item>
+        <item>Dual Sticks</item>
+    </array>
+    <array name="mapshot_save_options">
+        <item>HUD and AR</item>
+        <item>HUD Only</item>
+        <item>AR Only</item>
+        <item>No HUD or AR</item>
+    </array>
+    <array name="mapshot_save_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="orbitpoint_finishactions">
+        <item>No Action</item>
+        <item>Go Home and Land</item>
+        <item>Hover at First Waypoint</item>
+        <item>Land at Last Waypoint</item>
+    </array>
+    <array name="orbitpoint_headings">
+        <item>Towards Point</item>
+        <item>Orbit Forwards</item>
+        <item>Orbit Backwards</item>
+        <item>Away From Point</item>
+        <item>Remote Controller</item>
+        <item>Initial Heading</item>
+    </array>
+    <array name="platforms_array">
+        <item>None Selected</item>
+        <item>DJI</item>
+        <item>AV - Puma/Raven/Wasp</item>
+        <item>BH3</item>
+        <item>Indago II/III (2020.2)</item>
+        <item>MAVLink</item>
+        <item>R80D</item>
+        <item>Generic</item>
+        <item>Trillium</item>
+        <item>Evo</item>
+    </array>
+    <array name="restreaming_bitrate">
+        <item>400kbps (low)</item>
+        <item>700kbps</item>
+        <item>900kbps</item>
+        <item>2000kbps</item>
+        <item>3000kbps (high)</item>
+    </array>
+    <array name="restreaming_bitrate_values">
+        <item>400</item>
+        <item>700</item>
+        <item>900</item>
+        <item>2000</item>
+        <item>3000</item>
+    </array>
+    <array name="restreaming_size">
+        <item>320x240 (low)</item>
+        <item>640x480</item>
+        <item>1280x720</item>
+        <item>1920x1080 (high)</item>
+    </array>
+    <array name="reticle_names">
+        <item>Reticle 01</item>
+        <item>Reticle 02</item>
+        <item>Reticle 03</item>
+        <item>Reticle 04</item>
+        <item>Reticle 05</item>
+        <item>Reticle 06</item>
+        <item>Reticle 07</item>
+        <item>Reticle 08</item>
+        <item>Reticle 09</item>
+        <item>Reticle 10</item>
+        <item>Reticle 11</item>
+        <item>Reticle 12</item>
+        <item>Reticle 13</item>
+        <item>Reticle 14</item>
+    </array>
+    <array name="reticle_sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </array>
+    <array name="reticle_values">
+        <item>@drawable/reticle_01</item>
+        <item>@drawable/reticle_02</item>
+        <item>@drawable/reticle_03</item>
+        <item>@drawable/reticle_04</item>
+        <item>@drawable/reticle_05</item>
+        <item>@drawable/reticle_06</item>
+        <item>@drawable/reticle_07</item>
+        <item>@drawable/reticle_08</item>
+        <item>@drawable/reticle_09</item>
+        <item>@drawable/reticle_10</item>
+        <item>@drawable/reticle_11</item>
+        <item>@drawable/reticle_12</item>
+        <item>@drawable/reticle_13</item>
+        <item>@drawable/reticle_14</item>
+    </array>
+    <array name="route_point_types">
+        <item>WayPoint</item>
+        <item>OrbitPoint</item>
+    </array>
+    <array name="task_type_caps">
+        <item>capability.task.newroute</item>
+        <item>capability.task.existroute</item>
+        <item>capability.task.perimeter</item>
+        <item>capability.task.survey</item>
+    </array>
+    <array name="task_type_names">
+        <item>New Route</item>
+        <item>Existing Route</item>
+        <item>Perimeter</item>
+        <item>Survey</item>
+    </array>
+    <array name="video_destination">
+        <item>Local Area Network</item>
+        <item>Wowza Server</item>
+    </array>
+    <array name="waypoint_flightmodes">
+        <item>Normal</item>
+        <item>Curved</item>
+    </array>
+    <array name="waypoint_gotomodes">
+        <item>Safely</item>
+        <item>Point to Point</item>
+    </array>
+    <array name="waypoint_headings">
+        <item>Remote Controller</item>
+        <item>Flight Direction</item>
+    </array>
+</resources>

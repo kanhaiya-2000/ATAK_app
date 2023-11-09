@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.mavlink.MAVLinkCompassCalibScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/mavlink_compass_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/mavlink_help_text" android:paddingTop="0dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mavlink_compass_instruct" android:layout_weight="0"/>
+        <ImageView android:id="@+id/mavlink_down_image" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/vehicle_down_rotate" android:layout_weight="1" android:largeHeap="true"/>
+        <ImageView android:id="@+id/mavlink_left_image" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/vehicle_left_rotate" android:layout_weight="1" android:largeHeap="true"/>
+        <ImageView android:id="@+id/mavlink_nosedown_image" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/vehicle_nose_down_rotate" android:layout_weight="1" android:largeHeap="true"/>
+    </LinearLayout>
+</com.atakmap.android.uastool.mavlink.MAVLinkCompassCalibScreen>

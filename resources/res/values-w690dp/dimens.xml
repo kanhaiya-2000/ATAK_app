@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="uastool_joystick_buttons_top_offset">48dp</dimen>
+    <dimen name="uastool_ui_button_size_full">40dp</dimen>
+    <dimen name="uastool_ui_button_size_half">37dp</dimen>
+    <dimen name="uastool_ui_topbar_height_full">50dp</dimen>
+</resources>

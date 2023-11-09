@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.dji.DJISettingsScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/djisettings_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl">
+    <RelativeLayout android:background="@color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:paddingStart="0dp" android:paddingEnd="2dp">
+            <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/djisettings_title_text" android:paddingTop="6dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_platform_settings"/>
+            <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageButton android:gravity="end" android:id="@+id/djisettings_refresh_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_refresh" android:contentDescription="TODO"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/djisettings_msg_text" android:paddingTop="0dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_messages" android:layout_below="@+id/djisettings_header"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/djisettings_msg_text">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_controller" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/djisettings_controller_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_buttons_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_buttons_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_custom_buttons" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                            <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_buttons_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                        </LinearLayout>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <ImageButton android:id="@+id/djisettings_buttons_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/buttons" android:adjustViewBounds="false" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/calibration" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/djisettings_calib_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_calibaccel_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibaccel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_accelerometer" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                            <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibaccel_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                        </LinearLayout>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <ImageButton android:id="@+id/djisettings_calibaccel_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/accelerometer" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_calibgyro_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibgyro_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_gyroscope" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                            <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibgyro_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                        </LinearLayout>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <ImageButton android:id="@+id/djisettings_calibgyro_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/gyroscope" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_calibcompass_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibcompass_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_compass" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                            <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibcompass_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                        </LinearLayout>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <ImageButton android:id="@+id/djisettings_calibcompass_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/compass" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_calibgimbal_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibgimbal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_gimbal" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                            <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_calibgimbal_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                        </LinearLayout>
+                        <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <ImageButton android:id="@+id/djisettings_calibgimbal_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/gimbal" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_landinggear" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_landinggear" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landinggear_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_landinggear_restrict" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landinggear_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_landinggear_check" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_landinggear_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_restrictions" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_maxalt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_maxalt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_maxalt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_maxalt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_maxalt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_maxdist_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_maxdist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_dist_restrict" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_maxdist_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:layout_gravity="fill" android:id="@+id/djisettings_maxdist_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/white"/>
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_maxdist_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_maxdist_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="left" android:id="@+id/djisettings_failsafe_text" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/failsafe_behavior" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_gohomebatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_gohomebatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_batt_pct" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_gohomebatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_gohomebatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_gohomebatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_gohomealt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_gohomealt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_gohomealt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_gohomealt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_gohomealt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_landbatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landbatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/land_now_batt_pct" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landbatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_landbatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_landbatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_connloss_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_connloss_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_loss_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_connloss_value" android:layout_width="150dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_connloss_current" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="6" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_connloss_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:id="@+id/djisettings_assist_text" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_flight_assistance" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_collision_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_collision_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_collision_avoid" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_collision_value" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12sp" android:id="@+id/djisettings_collision_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_avoid_stationary_obstacles" android:paddingStart="0dp" android:paddingEnd="2dp" android:buttonTint="@color/white"/>
+                        <ImageButton android:id="@+id/djisettings_collision_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_active_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_active_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_active_avoid" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_active_value" android:layout_width="100dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12sp" android:id="@+id/djisettings_active_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_avoid_moving_obstacles" android:paddingStart="0dp" android:paddingEnd="2dp" android:buttonTint="@color/white"/>
+                        <ImageButton android:id="@+id/djisettings_active_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_vision_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_vision_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_vision_positioning" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_vision_value" android:layout_width="150dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12sp" android:id="@+id/djisettings_vision_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_vision_positioning" android:paddingStart="0dp" android:paddingEnd="2dp" android:buttonTint="@color/white"/>
+                        <ImageButton android:id="@+id/djisettings_vision_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_precision_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_precision_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_precision_landing" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_precision_value" android:layout_width="150dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12sp" android:id="@+id/djisettings_precision_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_precision_landing" android:paddingStart="0dp" android:paddingEnd="2dp" android:buttonTint="@color/white"/>
+                        <ImageButton android:id="@+id/djisettings_precision_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_landing_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_landing_protection" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_landing_value" android:layout_width="150dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:textSize="12sp" android:id="@+id/djisettings_landing_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_check_safe_landing" android:paddingStart="0dp" android:paddingEnd="2dp" android:buttonTint="@color/white"/>
+                        <ImageButton android:id="@+id/djisettings_landing_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:id="@+id/djisettings_wifi_title" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_wifi" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_ssid_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_ssid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wifi_ssid" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_ssid_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_wifi_ssid_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="6" android:inputType="text" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:layout_gravity="end" android:id="@+id/djisettings_wifi_ssid_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_pwd_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_pwd_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wifi_pwd" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_pwd_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_wifi_pwd_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="6" android:inputType="textPassword" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:layout_gravity="end" android:id="@+id/djisettings_wifi_pwd_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_channelmode_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_channelmode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wifi_channelmode" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_channelmode_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_wifi_channelmode_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_wifi_channelmode_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_channelnumber_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_channelnumber_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wifi_channelnumber" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_channelnumber_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_wifi_channelnumber_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_wifi_channelnumber_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_frequencyband_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_frequencyband_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_ocusync_frequencyband" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_frequencyband_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_wifi_frequencyband_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_wifi_frequencyband_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_wifi_datarate_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_datarate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wifi_datarate" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_wifi_datarate_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_wifi_datarate_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_wifi_datarate_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:id="@+id/djisettings_ocusync_title" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_ocusync" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_ocusync_channelmode_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelmode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_ocusync_channelmode" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelmode_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_ocusync_channelmode_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_ocusync_channelmode_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_ocusync_channelbandwidth_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelbandwidth_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_ocusync_channelbandwidth" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelbandwidth_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_ocusync_channelbandwidth_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_ocusync_channelbandwidth_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_ocusync_channelnumber_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelnumber_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_ocusync_channelnumber" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_channelnumber_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_ocusync_channelnumber_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_ocusync_channelnumber_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_ocusync_frequencyband_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_frequencyband_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_ocusync_frequencyband" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_ocusync_frequencyband_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_ocusync_frequencyband_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_ocusync_frequencyband_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:id="@+id/djisettings_lightbridge_title" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_lightbridge" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_lb_channelmode_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_channelmode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_lb_channelmode" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_channelmode_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_lb_channelmode_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_lb_channelmode_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_lb_channelnumber_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_channelnumber_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_lb_channelnumber" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_channelnumber_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_lb_channelnumber_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_lb_channelnumber_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_lb_datarate_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_datarate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_lb_datarate" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_datarate_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_lb_datarate_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_lb_datarate_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_lb_transmissionmode_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_transmissionmode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_lb_transmissionmode" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_transmissionmode_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_lb_transmissionmode_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_lb_transmissionmode_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_lb_frequencyband_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_frequencyband_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_lb_frequencyband" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_lb_frequencyband_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/djisettings_lb_frequencyband_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_lb_frequencyband_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:id="@+id/djisettings_misc_text" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dji_misc" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_rez_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_rez_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_camera_res_fps" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_rez_value" android:layout_width="120dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/djisettings_rez_current" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="10" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                        <ImageButton android:id="@+id/djisettings_rez_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_sdcard_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_sdcard_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_format_sd_card" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_sdcard_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/djisettings_sdcard_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/sdcard" android:contentDescription="TODO"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_storage_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_storage_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_format_internal_storage" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_storage_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/djisettings_storage_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/internal" android:contentDescription="TODO"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_activate_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_activate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_activate_platform" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_activate_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/djisettings_activate_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/activate" android:contentDescription="TODO"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/djisettings_unlock_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_unlock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_unlock_platform" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                        <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/djisettings_unlock_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <ImageButton android:id="@+id/djisettings_unlock_button" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/unlock" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@+id/djisettings_wait_layout" android:background="@color/blackALPHA" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:id="@+id/djisettings_wait_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/djisettings_wait_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dji_wait_text" android:layout_below="@+id/djisettings_wait_progress" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.atakmap.android.uastool.dji.DJISettingsScreen>

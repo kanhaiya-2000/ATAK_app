@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.atakmap.android.uastool.r80d.R80dSettingsScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/r80dsettings_screen" android:background="@android:color/black" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/r80dsettings_title_text" android:paddingTop="6dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/r80d_platform_settings"/>
+        <Space android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <ImageButton android:gravity="end" android:id="@+id/r80dsettings_refresh_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/action_refresh" android:contentDescription="TODO"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="2dp">
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/calibration" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_leds_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_led_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aircraft_leds" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_led_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/r80dsettings_leds_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_cruisespeed_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_cruisespeed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cruise_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_cruisespeed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/r80dsettings_cruisespeed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_cruisespeed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="start" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_restrictions" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_maxalt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_maxalt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_maxalt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/r80dsettings_maxalt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_maxalt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_maxdist_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_maxdist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_dist_restrict" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_maxdist_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/r80dsettings_maxdist_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_maxdist_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textStyle="italic" android:textColor="@color/lightBlue" android:gravity="left" android:id="@+id/r80dsettings_failsafe_text" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/failsafe_behavior" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_set_home_layout" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_set_home_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_position" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_set_home_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <Button android:gravity="center" android:id="@+id/r80dsettings_set_home_button" android:paddingLeft="10dp" android:layout_width="200dp" android:layout_height="40dp" android:src="@drawable/action_pick" android:scaleType="fitCenter" android:text="@string/pointedit_coord_place" android:drawablePadding="-40dp" android:layout_alignParentRight="true" android:contentDescription="TODO" android:drawableStart="@drawable/action_pick" android:layout_marginEnd="6dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_faultaction_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_faultaction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fault_action_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_faultaction_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/r80dsettings_faultaction_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_ledfault_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_ledfault_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aircraft_fault_leds" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_ledfault_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/r80dsettings_ledfault_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_connloss_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_connloss_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conn_loss_behavior" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_connloss_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.atakmap.android.gui.PluginSpinner android:textSize="12sp" android:id="@+id/r80dsettings_connloss_spinner" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp" android:backgroundTint="@color/lightBlue" android:buttonTint="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_gohomebatt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_gohomebatt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_batt_time" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_gohomebatt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/r80dsettings_gohomebatt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_gohomebatt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_gohomealt_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_gohomealt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_home_altitude" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_gohomealt_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/r80dsettings_gohomealt_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_gohomealt_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/r80dsettings_recoveryspeed_layout" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_recoveryspeed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recovery_speed" android:paddingStart="6dp" android:paddingEnd="0dp"/>
+                    <TextView android:textSize="12sp" android:textStyle="italic" android:textColor="@color/white" android:gravity="start" android:id="@+id/r80dsettings_recoveryspeed_value" android:layout_width="200dp" android:layout_height="wrap_content" android:text="@string/dashdashdash" android:maxLines="3" android:paddingStart="10dp" android:paddingEnd="0dp"/>
+                </LinearLayout>
+                <Space android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/darker_gray" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/r80dsettings_recoveryspeed_edit" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_marginTop="4dp" android:ems="4" android:inputType="number" android:textAlignment="gravity" android:paddingStart="0dp" android:paddingEnd="2dp"/>
+                    <ImageButton android:id="@+id/r80dsettings_recoveryspeed_button" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sync" android:contentDescription="TODO"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.atakmap.android.uastool.r80d.R80dSettingsScreen>

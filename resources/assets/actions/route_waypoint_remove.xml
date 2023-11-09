@@ -1,0 +1,20 @@
+
+<set>
+    <broadcast>
+        <action>com.atakmap.android.uastool.ROUTE_WAYPOINT_DELETE</action>
+        <extras>
+            <string key='route_uid'>${route_uid}</string>
+            <string key='uid'>${uid}</string>
+            <string key='point'>${last_touch}</string>
+        </extras>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.UNFOCUS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_DETAILS</action>
+    </broadcast>
+    <broadcast>
+        <action>com.atakmap.android.maps.HIDE_MENU</action>
+    </broadcast>
+</set>
